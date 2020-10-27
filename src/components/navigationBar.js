@@ -10,8 +10,8 @@ import texture from "../assets/designs/redox-01.png"
 const StyledNavbar = styled.div`
   .navbar {
     background: transparent;
-    transition: background-color 0.2s linear;
-    &:hover {
+    transition: background-color 0.7s linear;
+    /* &:hover {
       background: #8db596;
       background-image: url(${texture}),
         linear-gradient(
@@ -20,7 +20,7 @@ const StyledNavbar = styled.div`
           rgba(0, 0, 0, 0),
           rgba(0, 0, 0, 0.3)
         );
-    }
+    } */
   }
   .navbar.active {
     background: #8db596;
@@ -44,12 +44,10 @@ const StyledNavbar = styled.div`
       font-size: 1rem;
     }
   }
-
   .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5);
     background: transparent !important;
   }
-
   .navbar-nav {
     .nav-link {
       font-family: "Josefin Sans", sans-serif;
@@ -61,40 +59,41 @@ const StyledNavbar = styled.div`
     }
   }
 `
-
 function NavigationBar() {
-  const [navbar, setNavbar] = useState(false)
+  const [activeNavbar, setActiveNavbar] = useState()
+
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setActiveNavbar(true)
+    } else {
+      setActiveNavbar(false)
+    }
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground)
+
     return () => {
       window.removeEventListener("scroll", changeBackground)
     }
   }, [])
 
-  const changeBackground = () => {
-    if (window.scrollY >= 50) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-    }
-  }
-
   return (
     <StyledNavbar>
       <Navbar
-        className={navbar ? "navbar active" : "navbar"}
+        id="my_div"
+        className={activeNavbar ? "navbar active" : "navbar"}
         expand="lg"
         fixed="top"
         variant="dark"
+        onPointerOver={() => setActiveNavbar(true)}
+        onPointerOut={() => setActiveNavbar(false)}
       >
         <Container>
           <Logo />
-
           <Link className="navbar-brand" to="/">
             PILATES WITH ORYAN
           </Link>
-
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="navbar-nav ml-auto">
