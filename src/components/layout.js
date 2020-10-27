@@ -1,14 +1,16 @@
 import React from "react"
-import Header from "./header"
+
+import NavigationBar from "./navbar"
 import Footer from "./footer"
 import Jumbotop from "./jumbotron.js"
 const Layout = props => {
   return (
     <div>
-      <Header />
+      <NavigationBar />
       <Jumbotop />
       <div className="separator"></div>
       {props.children}
+      <Footer />
     </div>
   )
 }

@@ -1,10 +1,9 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Pilates With Oryan`,
+    siteUrl: `https://www.pilateswithoryan.com`,
+    author: "Roi Cohen",
+  },
+
   plugins: [`gatsby-plugin-sass`],
 }
