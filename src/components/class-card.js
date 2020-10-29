@@ -1,7 +1,8 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import styled from "styled-components";
-import texture1 from "../assets/designs/black-thread-light.png";
+import React from "react"
+import Card from "react-bootstrap/Card"
+import styled from "styled-components"
+import texture1 from "../assets/designs/black-thread-light.png"
+import Img from "gatsby-image"
 
 const StyledCard = styled(Card)`
   margin: 2rem 0 5rem;
@@ -22,15 +23,15 @@ const StyledCard = styled(Card)`
   .card-text {
     text-align: justify;
   }
-  .card-img {
-    transform: scale(1);
-    transition: transform 0.5s ease;
-    margin-bottom: "2rem";
-    &:hover {
-      transform: scale(1.5);
-    }
+`
+const StyledImage = styled(Img)`
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  margin-bottom: "2rem";
+  &:hover {
+    transform: scale(1.5);
   }
-`;
+`
 
 const Overflow = styled.div`
   width: 100%;
@@ -39,7 +40,7 @@ const Overflow = styled.div`
   overflow: hidden;
   border-radius: 0.25rem;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
-`;
+`
 
 export default function ClassCard(props) {
   return (
@@ -48,9 +49,12 @@ export default function ClassCard(props) {
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.text}</Card.Text>
         <Overflow>
-          <Card.Img src={props.img} />
+          <StyledImage
+            alt={props.img.name}
+            fluid={props.img.childImageSharp.fluid}
+          />
         </Overflow>
       </Card.Body>
     </StyledCard>
-  );
+  )
 }

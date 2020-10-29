@@ -4,6 +4,15 @@ module.exports = {
     siteUrl: `https://www.pilateswithoryan.com`,
     author: "Roi Cohen",
   },
-
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/img/`,
+      },
+    },
+    `gatsby-plugin-sass`,
+  ],
 }

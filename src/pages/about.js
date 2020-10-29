@@ -1,31 +1,30 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import AboutImage from "../assets/img/c1.jpg"
-import Image from "react-bootstrap/Image"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import styled from "styled-components"
 
-function About() {
+const styledTextCard = styled.div``
+
+function About({ data }) {
   return (
     <Layout>
       <Container>
         <div className="pt-4 text-left">
           <p>
-            <span className="first-font h3">Oryan</span> started to work as a
-            certificate Pilates instructor for mat and apparatus on 2009.
+            I started to work as a certificate Pilates instructor for mat and
+            apparatus on 2009. My journey as an instructor started in Tel-Aviv.
+            Since 2016 I live in Berlin and teaches in several studios in the
+            city – <br />
+            Prenzlauer Berg | Charlottenburg | Weißensee | Karlshorst | Mitte{" "}
           </p>
-          <Image
-            className="center shadow"
-            rounded
-            src={AboutImage}
-            width="100%"
+          <Img
+            fluid={data.testImage.childImageSharp.fluid}
             alt="oryan-photo"
+            className="center shadow rounded"
           />
           <p className="pt-4">
-            Her journey as an instructor started in Tel-Aviv. since 2016 she is
-            located in Berlin and teaches in several studios in the city –
-            Prenzlauer Berg | Charlottenburg | Weißensee | Karlshorst{" "}
-          </p>
-          <p>
             Offering Private, Duo or Group classes with mat or apparatus. The
             classes are suitable for all levels and conditions, focusing on the
             participant’s personal needs.
@@ -59,3 +58,15 @@ function About() {
 }
 
 export default About
+
+export const query = graphql`
+  query {
+    testImage: file(relativePath: { eq: "reformer-legs-up.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
