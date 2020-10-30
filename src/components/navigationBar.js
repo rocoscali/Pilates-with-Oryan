@@ -59,7 +59,7 @@ const StyledNavbar = styled.div`
     }
   }
 `
-function NavigationBar() {
+const NavigationBar = () => {
   const [activeNavbar, setActiveNavbar] = useState()
 
   const changeBackground = () => {
@@ -86,8 +86,8 @@ function NavigationBar() {
         expand="lg"
         fixed="top"
         variant="dark"
-        onPointerOver={() => setActiveNavbar(true)}
-        onPointerOut={() => setActiveNavbar(false)}
+        onMouseOver={() => setActiveNavbar(true)}
+        onMouseOut={() => setActiveNavbar(false)}
       >
         <Container>
           <Logo />

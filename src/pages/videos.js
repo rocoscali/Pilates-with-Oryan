@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container"
 import Layout from "../components/layout"
 import Video from "../components/video-comp"
 
-function Videos(props) {
+const Videos = props => {
   return (
     <Layout>
       <Container>

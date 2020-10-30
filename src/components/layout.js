@@ -2,6 +2,7 @@ import React from "react"
 import NavigationBar from "./navigationBar"
 import Footer from "./footer"
 import Jumbotop from "./jumbotron.js"
+
 const Layout = props => {
   return (
     <div>

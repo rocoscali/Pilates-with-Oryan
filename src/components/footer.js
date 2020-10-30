@@ -6,6 +6,7 @@ import texture from "../assets/designs/redox-01.png"
 const StyledFooter = styled(Navbar)`
   justify-content: center;
   margin-top: 1rem;
+  flex-shrink: none;
 
   background: #8db596;
   background-image: url(${texture}),
@@ -17,11 +18,11 @@ const StyledFooter = styled(Navbar)`
     );
   color: #fcf8f3;
 `
-
-export default function Footer() {
+const Footer = () => {
   return (
     <StyledFooter sticky="bottom">
       <h5 className="m-1">© Pilates With Oryan © </h5>
     </StyledFooter>
   )
 }
+export default Footer

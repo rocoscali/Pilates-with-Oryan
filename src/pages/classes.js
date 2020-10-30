@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
-function Classes(props) {
+const Classes = props => {
   return (
     <Layout>
       <Container>

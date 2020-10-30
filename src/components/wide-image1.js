@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import wideImg1 from "../assets/img/ref-wide1.jpg";
+import React from "react"
+import styled from "styled-components"
+import wideImg1 from "../assets/img/ref-wide1.jpg"
 
 const Image = styled.div`
   display: block;
@@ -15,7 +15,7 @@ const Image = styled.div`
     background: url(${wideImg1}) no-repeat center center;
     background-size: cover;
   }
-`;
+`
 const Overlay = styled.div`
   background-color: #000;
   opacity: 0.6;
@@ -25,12 +25,13 @@ const Overlay = styled.div`
   bottom: 0;
   right: 0;
   z-index: -1;
-`;
+`
 
-export default function WideImage1() {
+const WideImage1 = () => {
   return (
     <Image>
       <Overlay />
     </Image>
-  );
+  )
 }
+export default WideImage1

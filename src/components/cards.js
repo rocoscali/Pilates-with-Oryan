@@ -4,7 +4,7 @@ import ClassCard from "./class-card.js"
 // import cadillac from "../assets/img/cad-1.jpg"
 // import chair from "../assets/img/chair-1.jpg"
 
-function Cards(props) {
+const Cards = props => {
   return (
     <div>
       <ClassCard

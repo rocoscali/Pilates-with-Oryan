@@ -2,7 +2,7 @@ import React from "react"
 import WideImage1 from "./wide-image1.js"
 import Container from "react-bootstrap/Container"
 
-function Home() {
+const Home = () => {
   return (
     <div className="text-justify-left pt-3">
       <Container>

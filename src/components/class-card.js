@@ -42,7 +42,7 @@ const Overflow = styled.div`
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 `
 
-export default function ClassCard(props) {
+const ClassCard = props => {
   return (
     <StyledCard>
       <Card.Body>
@@ -58,3 +58,5 @@ export default function ClassCard(props) {
     </StyledCard>
   )
 }
+
+export default ClassCard

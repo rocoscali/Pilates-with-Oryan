@@ -1,7 +1,7 @@
 import React from "react"
 import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed"
 
-function Video(props) {
+const Video = props => {
   return (
     <ResponsiveEmbed aspectRatio="16by9">
       <iframe

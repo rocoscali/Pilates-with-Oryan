@@ -1,8 +1,8 @@
-import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
+import React from "react"
+import Carousel from "react-bootstrap/Carousel"
+import Container from "react-bootstrap/Container"
 
-export default function Quotes() {
+const Quotes = () => {
   return (
     <Container>
       <Carousel fade prevIcon={false} nextIcon={false} indicators={false}>
@@ -38,5 +38,7 @@ export default function Quotes() {
         </Carousel.Item>
       </Carousel>
     </Container>
-  );
+  )
 }
+
+export default Quotes

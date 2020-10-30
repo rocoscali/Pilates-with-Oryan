@@ -13,9 +13,16 @@ import Layout from "../components/layout"
 
 const ContactForm = styled(Form)`
   font-family: "Montserrat", sans-serif;
-`
 
-export default function Contact() {
+  .form-control {
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  .form-label {
+    margin-left: 0.5rem;
+  }
+`
+const Contact = () => {
   return (
     <Layout>
       <Container className="p-4">
@@ -55,8 +62,8 @@ export default function Contact() {
               <Form.Group id="massageCheckbox">
                 <Form.Check type="checkbox" label="Facia Massage Therapy" />
               </Form.Group>
-              <Button className="btn-lg w-25" variant="info" type="submit">
-                Submit
+              <Button className="btn-lg w-35" variant="info" type="submit">
+                Send
               </Button>
             </ContactForm>
           </Col>
@@ -73,18 +80,17 @@ export default function Contact() {
               </Col>
             </Row>
             <Row>
-              <Col className="text-center pt-2">
+              <Col className="text-center pt-4">
+                <h5>
+                  For more information please use this form or contact me on -
+                </h5>
+                <br />
                 <h3> Oryan Werthaim</h3>
                 <h5>
                   <PhoneIcon /> +49-0176-34568126
                 </h5>
                 <h5>
                   <EmailIcon /> oryanpilates@gmail.com
-                </h5>
-                <br />
-                <h5>
-                  You are invited to contact me through phone or email for more
-                  info and questions
                 </h5>
               </Col>
             </Row>
@@ -94,3 +100,5 @@ export default function Contact() {
     </Layout>
   )
 }
+
+export default Contact

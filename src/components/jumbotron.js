@@ -3,7 +3,7 @@ import Jumbotron from "react-bootstrap/Jumbotron"
 import styled from "styled-components"
 import JumboImage from "../assets/img/jumbo-img1.jpg"
 import JumboImage2 from "../assets/img/jumbo-mobile1.jpg"
-import Quotes from "./jumbo-text"
+import Quotes from "./quotes"
 
 const Jumbo = styled(Jumbotron)`
   display: flex;
@@ -34,7 +34,7 @@ const Overlay = styled.div`
   z-index: -1;
 `
 
-export default function Jumbotop() {
+const Jumbotop = () => {
   return (
     <Jumbo>
       <Overlay />
@@ -42,3 +42,5 @@ export default function Jumbotop() {
     </Jumbo>
   )
 }
+
+export default Jumbotop
