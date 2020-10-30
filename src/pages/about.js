@@ -1,12 +1,12 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 import Img from "gatsby-image"
 import texture1 from "../assets/designs/black-thread-light.png"
-import styled from "styled-components"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 
 const StyledTextCardLeft = styled.div`
   display: flex;
