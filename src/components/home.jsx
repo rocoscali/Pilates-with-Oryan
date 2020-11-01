@@ -2,7 +2,6 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-
 import Img from "gatsby-image"
 import Link from "gatsby-Link"
 import styled from "styled-components"
@@ -15,9 +14,13 @@ const H5 = styled.h5`
   font-size: 1.2rem;
 `
 const HR = styled.hr`
-  border: 5px solid #8db596;
+  border: 3px solid #8db596;
   border-radius: 5px;
-  width: 60%;
+  width: 50%;
+`
+const Image = styled(Img)`
+  width: 30rem;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
 `
 const StyledImg = styled(Img)`
   display: flex;
@@ -41,7 +44,7 @@ const StyledTextCol = styled(Col)`
 const Home = props => {
   return (
     <div>
-      <Container className="pt-3">
+      <Container>
         <h2 className="text-center mt-4">Pilates classes in Berlin</h2>
         <H4 className="text-center mb-4">
           Classical | Contemporary | Mat & Apparatus
@@ -64,7 +67,7 @@ const Home = props => {
         </p>
       </Container>
       <WideImage1 />
-      <Container className="mt-4 mb-4">
+      <Container className="text-justify mt-4 mb-4">
         <p>
           While today it’s more commonly known as Pilates, Joseph Pilates
           actually called his exercise method “Contrology” ("The Art of Control"
@@ -78,13 +81,19 @@ const Home = props => {
           the Pilates training method still stands for today.
         </p>
       </Container>
-      <WideImage1 />
+      <Container className="mt-4 mb-4 d-flex justify-content-center">
+        <Image
+          fluid={props.data.josephPhoto1.childImageSharp.fluid}
+          alt="oryan-hang-like-monkey"
+          className="rounded"
+        />
+      </Container>
       <Container className="p-3">
-        <H5 className="text-center mt-3 mb-4">
+        <H5 className="text-center mt-3 mb-3">
           "In 10 sessions you'll feel the difference, in 20 you'll see the
           difference, and in 30 you'll have a new body" <br /> - Joseph Pilates
         </H5>
-        <p className="text-center">
+        <p className="text-justify">
           To get the best results I recommend at least 2-3 sessions a week of
           practice, apparatus class, or a mat class with small equipment
           (elastic band, fitness ball, magic ring, etc...). In the apparatus
@@ -93,7 +102,7 @@ const Home = props => {
           are designed especially for each individual needs. In the mat classes,
           you will learn the 34 classic exercises using only a mat and your
           Bodyweight. This is the original sequences that Joseph Pilates
-          published in his book from 1954. I will also add some functional
+          published in his book from 1945. I will also add some functional
           contemporary exercises to strengthen and preserve your daily movement
           routine.{" "}
         </p>
@@ -107,7 +116,7 @@ const Home = props => {
           </span>
         </p>
         <HR className="mt-4 mb-4"></HR>
-        <H5 className="text-center mt-3 mb-4">
+        <H5 className="text-center mt-3 mb-3">
           As you lay down on the mat, clear your mind and concentrate on the
           movements
         </H5>
@@ -117,7 +126,7 @@ const Home = props => {
           Then you will be able to perform a more complex movement.{" "}
         </p>
 
-        <Row className="mt-4">
+        <Row className="mt-5">
           {" "}
           <StyledImgCol xs={12} md={12} lg={{ span: 5, offset: 0 }}>
             <StyledImg

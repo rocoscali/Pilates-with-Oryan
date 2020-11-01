@@ -103,6 +103,11 @@ const NavigationBar = () => {
                 </Link>
               </Nav.Item>
               <Nav.Item>
+                <Link className="nav-link" to="/method">
+                  The Method
+                </Link>
+              </Nav.Item>
+              <Nav.Item>
                 <Link className=" nav-link" to="/classes">
                   Classes
                 </Link>

@@ -12,10 +12,10 @@ const StyledTextCardLeft = styled.div`
   display: flex;
   align-items: center;
   padding: 1rem 1rem 0rem;
-  /* margin-right: -40px; */
-  /* background: #fcf7ed; */
-  /* background-image: url(${texture1}); */
-  /* box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15); */
+  margin-right: -40px;
+  background: #fcf7ed;
+  background-image: url(${texture1});
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
   z-index: 10;
   @media (max-width: 991px) {
     margin-right: 0px;
@@ -39,10 +39,11 @@ const StyledCol = styled(Col)`
   display: flex;
   align-items: center;
 `
-
 const StyledImgRight = styled(Img)`
   display: flex;
   align-items: center;
+  width: 40rem;
+  height: 50rem;
   left: -20px;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
   z-index: 5;
@@ -54,6 +55,8 @@ const StyledImgRight = styled(Img)`
 const StyledImgLeft = styled(Img)`
   display: flex;
   align-items: center;
+  width: 40rem;
+  height: 50rem;
   right: -20px;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
   z-index: 5;
@@ -89,7 +92,7 @@ const About = ({ data }) => {
           </StyledCol>
           <Col xs={12} md={12} lg={7}>
             <StyledImgRight
-              fluid={data.reformerLegsUp.childImageSharp.fluid}
+              fluid={data.backTeaserCadillac.childImageSharp.fluid}
               alt="oryan-photo"
               className="center rounded"
             />
@@ -150,7 +153,7 @@ const About = ({ data }) => {
           </StyledCol>
           <Col xs={12} md={12} lg={6}>
             <StyledImgRight
-              fluid={data.backTeaserCadillac.childImageSharp.fluid}
+              fluid={data.reformerLegsUp.childImageSharp.fluid}
               alt="oryan-photo"
               className="center rounded"
             />
