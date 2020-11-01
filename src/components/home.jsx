@@ -2,6 +2,7 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Button from "react-bootstrap/Button"
 import Img from "gatsby-image"
 import Link from "gatsby-Link"
 import styled from "styled-components"
@@ -40,6 +41,14 @@ const StyledTextCol = styled(Col)`
     text-align: center;
   }
 `
+const StyledLink = styled(Link)`
+  color: #fcf8f3;
+  text-decoration: none;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+`
 
 const Home = props => {
   return (
@@ -71,14 +80,21 @@ const Home = props => {
         <p>
           While today it’s more commonly known as Pilates, Joseph Pilates
           actually called his exercise method “Contrology” ("The Art of Control"
-          as he stated it). Joseph explains “To be able to perform movements
-          smoothly and fluently, you have to concentrate on every single part,
-          every muscle of your body at every moment. This is the only way to
-          gain control over every aspect of every training moment .” In his
-          book, “Return To Life”, he claims that “Contrology develops the body
-          uniformly, corrects wrong postures, restores physical vitality,
-          invigorates the mind, and elevates the spirit.” That is exactly what
-          the Pilates training method still stands for today.
+          as he stated it). Joseph explains{" "}
+          <em>
+            “To be able to perform movements smoothly and fluently, you have to
+            concentrate on every single part, every muscle of your body at every
+            moment. This is the only way to gain control over every aspect of
+            every training moment .”
+          </em>{" "}
+          <br /> In his book, “Return To Life”, he claims that{" "}
+          <em>
+            “Contrology develops the body uniformly, corrects wrong postures,
+            restores physical vitality, invigorates the mind, and elevates the
+            spirit.”{" "}
+          </em>
+          That is exactly what the Pilates training method still stands for
+          today.
         </p>
       </Container>
       <Container className="mt-4 mb-4 d-flex justify-content-center">
@@ -90,32 +106,40 @@ const Home = props => {
       </Container>
       <Container className="p-3">
         <H5 className="text-center mt-3 mb-3">
-          "In 10 sessions you'll feel the difference, in 20 you'll see the
-          difference, and in 30 you'll have a new body" <br /> - Joseph Pilates
+          <em>
+            {" "}
+            "In 10 sessions you'll feel the difference, in 20 you'll see the
+            difference, and in 30 you'll have a new body"{" "}
+          </em>
+          <br /> - Joseph Pilates
         </H5>
         <p className="text-justify">
           To get the best results I recommend at least 2-3 sessions a week of
           practice, apparatus class, or a mat class with small equipment
-          (elastic band, fitness ball, magic ring, etc...). In the apparatus
-          classes, we use classical apparatus such as Reformer, Cadilac, High
-          Chair, Wunda Chair, Pedi pole, Ladder Barrel, and more. The classes
-          are designed especially for each individual needs. In the mat classes,
-          you will learn the 34 classic exercises using only a mat and your
-          Bodyweight. This is the original sequences that Joseph Pilates
-          published in his book from 1945. I will also add some functional
-          contemporary exercises to strengthen and preserve your daily movement
-          routine.{" "}
+          (elastic band, fitness ball, magic ring, etc...). <br /> In the
+          apparatus classes, we use classical apparatus such as Reformer,
+          Cadilac, High Chair, Wunda Chair, Pedi pole, Ladder Barrel, and more.
+          The classes are designed especially for each individual needs. <br />
+          In the mat classes, you will learn the 34 classic exercises using only
+          a mat and your Bodyweight. This is the original sequences that Joseph
+          Pilates published in his book from 1945. <br /> I will also add some
+          functional contemporary exercises to strengthen and preserve your
+          daily movement routine.{" "}
         </p>
+        <br />
         <HR className="mt-4 mb-4"></HR>
+        <br />
         <p className="text-center">
           Especially for Covid19 days, I recorded video classes for you to
           practice at home. <br /> The videos are free and available at any time
-          you need it.{" "}
-          <span>
-            <Link to="/videos">To The Videos</Link>
-          </span>
+          you need it. <br /> <br />
+          <Button className="btn-lg w-35" variant="info" type="submit">
+            <StyledLink to="/videos">To The Videos</StyledLink>
+          </Button>
         </p>
+        <br />
         <HR className="mt-4 mb-4"></HR>
+        <br />
         <H5 className="text-center mt-3 mb-3">
           As you lay down on the mat, clear your mind and concentrate on the
           movements

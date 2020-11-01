@@ -8,81 +8,66 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import texture1 from "../assets/designs/black-thread-light.png"
 
-const StyledTextCardLeft = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem 0rem;
-  margin-right: -40px;
+const StyledContainer = styled(Container)`
+  margin: 2rem auto 2rem;
+  width: 90%;
+  flex: 1 1 auto;
   background: #fcf7ed;
   background-image: url(${texture1});
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
-  z-index: 10;
+`
+const StyledTextCardLeft = styled.div`
+  display: flex;
+  padding: 1rem 1rem 0rem;
   @media (max-width: 991px) {
-    margin-right: 0px;
+    text-align: justify;
   }
 `
 const StyledTextCardRight = styled.div`
   display: flex;
-  align-items: center;
   padding: 1rem 1rem 0rem;
-  margin-left: -40px;
-  background: #fcf7ed;
-  background-image: url(${texture1});
-  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
-  z-index: 10;
   @media (max-width: 991px) {
-    margin-top: -10px;
-    margin-left: 0px;
+    text-align: justify;
   }
 `
 const StyledCol = styled(Col)`
   display: flex;
-  align-items: center;
 `
-const StyledImgRight = styled(Img)`
+const StyledImageWide = styled(Img)`
   display: flex;
-  align-items: center;
-  width: 40rem;
-  height: 50rem;
-  left: -20px;
+  width: 100%;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
-  z-index: 5;
   @media (max-width: 991px) {
-    left: 0px;
-    top: -10px;
+    width: 100%;
   }
 `
-const StyledImgLeft = styled(Img)`
+const StyledImg = styled(Img)`
   display: flex;
-  align-items: center;
-  width: 40rem;
-  height: 50rem;
-  right: -20px;
+  width: 20rem;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
-  z-index: 5;
   @media (max-width: 991px) {
-    right: 0px;
+    width: 100%;
   }
 `
 
 const About = ({ data }) => {
   return (
     <Layout>
-      <Container>
-        <Row className="mt-5 mb-5 text-left">
-          <StyledCol
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 10, offset: 1 }}
-            lg={{ span: 5, offset: 0 }}
-          >
-            <StyledTextCardLeft className="rounded">
+      <StyledContainer className="rounded">
+        <h2 className="text-center pt-3">About Me</h2>
+        <Row className="mt-3 mb-3 text-left">
+          <StyledCol xs={12} md={12} lg={{ span: 6, offset: 1 }}>
+            <StyledTextCardLeft>
               <p>
                 I started to work as a certificate Pilates instructor for mat
                 and apparatus on 2009. <br />
+                <br />
                 My journey as an instructor started in several fitness and
                 pilates studios in Tel-Aviv, Israel.
+                <br />
                 <br /> I was also working daily with disabled and amputees in a
                 soldier's rehabilitation center for 3 years. <br />
+                <br />
                 Since 2016 I live in Berlin and teaches in several studios in
                 the city – <br />
                 Prenzlauer Berg | Charlottenburg | Weißensee | Karlshorst |
@@ -90,37 +75,42 @@ const About = ({ data }) => {
               </p>
             </StyledTextCardLeft>
           </StyledCol>
-          <Col xs={12} md={12} lg={7}>
-            <StyledImgRight
+          <Col xs={12} md={12} lg={4} className="justify-content-center d-flex">
+            <StyledImg
               fluid={data.backTeaserCadillac.childImageSharp.fluid}
-              alt="oryan-photo"
-              className="center rounded"
+              alt={data.backTeaserCadillac.name}
+              className="rounded"
             />
           </Col>
         </Row>
 
-        <Row className="mt-5 mb-5 text-left">
-          <Col xs={12} md={12} lg={{ span: 5, offset: 1 }} height="200px">
-            <StyledImgLeft
+        <Row className="mt-3 mb-3 text-left">
+          <Col
+            xs={{ order: "last", span: 12 }}
+            md={{ order: "last", span: 12 }}
+            lg={{ order: "first", span: 4, offset: 1 }}
+            className="justify-content-center d-flex"
+          >
+            <StyledImg
               fluid={data.cadillacLegsHang.childImageSharp.fluid}
-              alt="oryan-photo"
-              className="center rounded"
+              alt={data.cadillacLegsHang.name}
+              className="rounded"
             />
           </Col>
           <StyledCol
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 10, offset: 1 }}
-            lg={{ span: 5, offset: 0 }}
+            xs={{ order: "first", span: 12 }}
+            md={{ order: "first", span: 12 }}
+            lg={{ order: "last", span: 6 }}
           >
-            <StyledTextCardRight className="rounded">
+            <StyledTextCardRight>
               <p className="pt-4"></p>
               <p>
                 I am an athlete and a dancer from an early age. Dancing has
-                always fostered the strong bond between my body and mind. During
-                training I've been exposed to Pilates as a method for body
-                maintaining, recovery and improvement. I always liked working
-                with people and after I complete a degree in psychology, I
-                immediately started the studies for teaching Pilates.
+                always fostered the strong bond between my body and mind. <br />
+                During training I've been exposed to Pilates as a method for
+                body maintaining, recovery and improvement. I always liked
+                working with people and after I complete a degree in psychology,
+                I immediately started the studies for teaching Pilates.
                 <br />
                 Pilates is suitable for any purpose – fitness, better posture,
                 athlete’s performance improvement, injury rehabilitation and
@@ -133,13 +123,13 @@ const About = ({ data }) => {
           </StyledCol>
         </Row>
 
-        <Row className="mt-5 mb-5 text-left">
+        <Row className="pb-3 text-justify">
           <StyledCol
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 10, offset: 1 }}
-            lg={{ span: 5, offset: 0 }}
+            xs={{ span: 12, offset: 0 }}
+            md={{ span: 12, offset: 0 }}
+            lg={{ span: 10, offset: 1 }}
           >
-            <StyledTextCardLeft className="rounded">
+            <StyledTextCardLeft>
               <p>
                 On the years 2013-2016, I was also working daily with disabled
                 and amputee in a soldier's rehabilitation center "Bet Halochem"
@@ -151,15 +141,17 @@ const About = ({ data }) => {
               </p>
             </StyledTextCardLeft>
           </StyledCol>
-          <Col xs={12} md={12} lg={6}>
-            <StyledImgRight
-              fluid={data.reformerLegsUp.childImageSharp.fluid}
-              alt="oryan-photo"
-              className="center rounded"
-            />
-          </Col>
         </Row>
-      </Container>
+        <Row className="p-3">
+          <StyledCol xs={12} md={12} lg={{ span: 10, offset: 1 }}>
+            <StyledImageWide
+              fluid={data.reformerLegsUp.childImageSharp.fluid}
+              alt={data.reformerLegsUp.name}
+              className="rounded"
+            />
+          </StyledCol>
+        </Row>
+      </StyledContainer>
     </Layout>
   )
 }
@@ -169,6 +161,7 @@ export default About
 export const query = graphql`
   query {
     reformerLegsUp: file(relativePath: { eq: "reformer-legs-up.jpg" }) {
+      name
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -176,6 +169,7 @@ export const query = graphql`
       }
     }
     cadillacLegsHang: file(relativePath: { eq: "cadillac-legs-hang.jpg" }) {
+      name
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -183,6 +177,23 @@ export const query = graphql`
       }
     }
     backTeaserCadillac: file(relativePath: { eq: "back-teaser-cadillac.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 2000, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    oryanBack: file(relativePath: { eq: "oryan-reformer-back.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 2000, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    wallClass: file(relativePath: { eq: "wall-class-stretch.jpg" }) {
+      name
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
