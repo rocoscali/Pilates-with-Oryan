@@ -1,5 +1,5 @@
 import React from "react"
-import ClassCard from "./class-card.js"
+import ClassCard from "./Class-card.js"
 // import reformer from "../assets/img/ref-1.jpg"
 // import cadillac from "../assets/img/cad-1.jpg"
 // import chair from "../assets/img/chair-1.jpg"

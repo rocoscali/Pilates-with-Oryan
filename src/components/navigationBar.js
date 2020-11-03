@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Link from "gatsby-Link"
-import Logo from "./logo"
+import Logo from "./Logo"
 import styled from "styled-components"
 import texture from "../assets/designs/redox-01.png"
 

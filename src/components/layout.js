@@ -1,7 +1,7 @@
 import React from "react"
-import NavigationBar from "./navigationBar"
-import Footer from "./footer"
-import Jumbotop from "./jumbotron.js"
+import NavigationBar from "./NavigationBar"
+import Footer from "./Footer"
+import Jumbotop from "./Jumbotron.js"
 
 const Layout = props => {
   return (

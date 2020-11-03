@@ -2,11 +2,12 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import texture1 from "../assets/designs/black-thread-light.png"
+import SEO from "../components/Seo"
 
 const StyledContainer = styled(Container)`
   margin: 2rem auto 2rem;
@@ -53,6 +54,7 @@ const StyledImg = styled(Img)`
 const About = ({ data }) => {
   return (
     <Layout>
+      <SEO />
       <StyledContainer className="rounded">
         <h2 className="text-center pt-3">About Me</h2>
         <Row className="mt-3 mb-3 text-left">

@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button"
 import Img from "gatsby-image"
 import Link from "gatsby-Link"
 import styled from "styled-components"
-import WideImage1 from "./wide-image1.js"
+import WideImage1 from "./Wide-image1.js"
 
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;

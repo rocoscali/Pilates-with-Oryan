@@ -2,10 +2,11 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import SEO from "../components/Seo"
 
 const StyledImg = styled(Img)`
   width: 25rem;
@@ -23,6 +24,7 @@ const Image = styled(Img)`
 const method = ({ data }) => {
   return (
     <Layout>
+      <SEO />
       <Container>
         <h2 className="text-center mt-4">The Method By Joseph H. Pilates</h2>
         <Row className="mt-4 mb-4">

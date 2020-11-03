@@ -1,11 +1,13 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import Layout from "../components/layout"
-import Video from "../components/video-comp"
+import Layout from "../components/Layout"
+import Video from "../components/Video-comp"
+import SEO from "../components/Seo"
 
 const Videos = props => {
   return (
     <Layout>
+      <SEO />
       <Container>
         <div className="text-center pb-3 pt-4">
           <h2>Try One Of My Videos</h2>

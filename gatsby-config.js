@@ -1,18 +1,54 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = "https://www.example.com",
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === "production"
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
 module.exports = {
   siteMetadata: {
     title: `Pilates With Oryan`,
-    siteUrl: `https://www.pilateswithoryan.com`,
+    titleTemplate: "%s · Pilates With Oryan",
+    description: "a website of Oryan Werthaim pilates instructor in Berlin",
+    url: `https://www.pilateswithoryan.com`,
+    image: "./static/favicon.ico",
     author: "Roi Cohen",
+    twitterUsername: "@pilateswithoryan",
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets/img/`,
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: "*" }],
+          },
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+        },
+      },
+    },
   ],
 }

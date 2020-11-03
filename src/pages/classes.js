@@ -1,12 +1,14 @@
 import React from "react"
-import Cards from "../components/cards"
+import Cards from "../components/Cards"
 import Container from "react-bootstrap/Container"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import { graphql } from "gatsby"
+import SEO from "../components/Seo"
 
 const Classes = props => {
   return (
     <Layout>
+      <SEO />
       <Container>
         <Cards data={props.data} />
       </Container>

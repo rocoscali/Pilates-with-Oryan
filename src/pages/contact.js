@@ -9,7 +9,8 @@ import Image from "react-bootstrap/Image"
 import AboutImage from "../assets/img/face1.jpg"
 import Button from "react-bootstrap/Button"
 import styled from "styled-components"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 
 const ContactForm = styled(Form)`
   font-family: "Montserrat", sans-serif;
@@ -25,6 +26,7 @@ const ContactForm = styled(Form)`
 const Contact = () => {
   return (
     <Layout>
+      <SEO />
       <Container className="p-4">
         <h2 className="text-center">Let's be in touch!</h2>
         <Row>

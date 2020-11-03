@@ -3,7 +3,7 @@ import Jumbotron from "react-bootstrap/Jumbotron"
 import styled from "styled-components"
 import JumboImage from "../assets/img/jumbo-img1.jpg"
 import JumboImage2 from "../assets/img/jumbo-mobile1.jpg"
-import Quotes from "./quotes"
+import Quotes from "./Quotes"
 
 const Jumbo = styled(Jumbotron)`
   display: flex;
