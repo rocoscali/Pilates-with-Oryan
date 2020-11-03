@@ -30,25 +30,25 @@ const method = ({ data }) => {
         <Row className="mt-4 mb-4">
           <Col xs={12} md={12} lg={8}>
             <p className="text-justify">
-              Joseph H. Pilates was born in 1883 in Mönchengladbach, Germany. He
-              was a small and sickly child who suffered from asthma, rickets and
-              rheumatic fever. His father was a prizewinning gymnast and his
-              mother was a naturopath.A family physician gave him a discarded
-              anatomy book, Joseph stated{" "}
+              Joseph H. Pilates was born in 1883 in Mönchengladbach, Germany. As
+              a young boy he was small and sickly, and suffered from asthma,
+              rickets and rheumatic fever. His father was a succesful gymnast
+              and his mother was a naturopath. A family physician gave him an
+              anatomy book. Joseph stated{" "}
               <em>
                 “I learned every page, every part of the body. I moved each part
                 as I memorized it. As a child, I was laying in the woods for
                 hours, hiding and watching the animals move, how the mothers
                 taught the young.”
               </em>{" "}
-              <br /> He studied both Eastern and Western forms of exercise
-              including yoga, Zen, and ancient Greek and Roman regimens. By the
-              time he was 14 he had worked so hard and developed his body to the
-              point that he was modelling for anatomy charts. Growing up in
-              Germany, he achieved some success as a boxer and gymnast – in
-              addition to be a skilled skier and diver. He was married twice in
-              Germany and had one child with his first wife Maria, who died in
-              1913. his second wife Elfrieda died in 1931.
+              <br /> Joseph studied both Eastern and Western forms of exercise
+              including yoga, Zen, and ancient Greek and Roman regimens. He had
+              worked so hard to developed his body to the point that on age 14
+              he was modelling for anatomy charts. Growing up in Germany, he
+              achieved some success as a boxer and a gymnast alongside being a
+              skilled skier and diver. He was married twice in Germany and had
+              one child with his first wife Maria, she died in 1913. Elfrieda,
+              his second wife, died in 1931.
             </p>
           </Col>
           <Col className="justify-content-center d-flex" xs={12} md={12} lg={4}>
@@ -61,27 +61,27 @@ const method = ({ data }) => {
         </Row>
         <div className="pt-3">
           <p className="text-justify">
-            In 1914, during WWI, he was interned, along with other German
+            In 1914, during WW1, he was interned, along with other German
             citizens in Lancaster, England. There he taught wrestling and
             self-defense, boasting that his students would emerge stronger than
-            before their internment. In this place he began devising his system
-            of original exercises that later became “Contrology.” He was
-            transferred to another internment camp on the Isle of Man where he
-            became kind of a nurse and worked with many internees who suffered
-            from wartime diseases and incarceration.{" "}
+            before their internment. In this place he began developing his
+            system of original exercises that later became “Contrology.” Later,
+            he was transferred to another internment camp on the Isle of Man
+            where he became kind of a nurse and worked with many internees who
+            suffered from wartime diseases and incarceration.{" "}
           </p>{" "}
         </div>{" "}
         <Row className="mt-4 mb-4">
           <Col xs={12} md={12} lg={8}>
             <p className="text-justify">
-              He then began devising equipment to rehabilitate them, he took the
+              He began developing equipment to rehabilitate them, he took the
               springs from the beds and formed exercise apparatus for the
               bedridden. In 1918, a terrible epidemic of influenza swept the
               world, killing millions of people, tens of thousands in England.
-              None of Joe’s followers succumbed even though the camps were the
-              hardest hit. <br /> After the war, Joe returned to Germany and
-              began training the Hamburg Military Police in self-defense and
-              physical training as well as taking on personal clients.
+              Even though the camps were the hardest hit, none of Joe’s
+              followers succumbed. <br /> After the war, Joe returned to Germany
+              and began training the Hamburg Military Police in self-defense and
+              physical training. He also started training personal clients.
               <br />
               <em>
                 {" "}
@@ -98,7 +98,7 @@ const method = ({ data }) => {
               movement analyst, who is said to have incorporated some of Joe’s
               theories and exercises into his own work. Mary Wigman, a famous
               German dancer and choreographer was a student of Joe’s and used
-              his exercises in her dance class warm-up.
+              his exercises in her dance class as a warm-up.
             </p>
           </Col>
           <Col className="justify-content-center d-flex" xs={12} md={12} lg={4}>
@@ -113,19 +113,19 @@ const method = ({ data }) => {
           <p className="text-justify">
             In 1925 he was invited to train the New German Army but because he
             was not happy with the political direction of Germany he decided to
-            leave. On the urging of boxing expert, Nat Fleischer, and with the
-            aid of Max Schmelling he decided to come to the U.S. He traveled
+            leave. On the advice of boxing expert, Nat Fleischer, and with the
+            help of Max Schmeling he decided to come to the U.S. He traveled
             twice to America, and on the way he met his future wife, Clara. She
-            was a kindergarten teacher who was suffering from arthritic pain and
-            Joe worked with her on the boat to heal her. <br />
+            was a kindergarten teacher who was suffering from arthritic pain.
+            During the journey, Joseph worked with her to heal her. <br />
             Upon arriving, they settled in New York City and opened a gym at 939
-            8th Ave, in the same building as several dance studios and rehearsal
-            space. It was this proximity that made “Contrology” such an
-            intrinsic part of many dancers’ training and rehab work and many
-            were sent to Joe to be “fixed.” George Balanchine, the famous
-            choreographer, studied with Joe and sent many of his dancers to
-            Pilates for strengthening and “balancing” as well as rehabilitation,
-            as did another famous dancer/choreographer, Martha Graham.
+            8th Ave, in the same building that was several dance studios and
+            rehearsal space. This proximity made “Contrology” such an intrinsic
+            part of many dancers' training and rehab work and many were sent to
+            Joe to be “fixed.” George Balanchine, the famous choreographer,
+            studied with Joe and sent many of his dancers to Pilates for
+            strengthening and “balancing” as well as rehabilitation, as did
+            another famous dancer/choreographer, Martha Graham.
           </p>{" "}
         </div>
         <Row className="mt-4 mb-4 justify-content-center d-flex">
@@ -139,15 +139,15 @@ const method = ({ data }) => {
           <Col xs={12} md={12} lg={8}>
             <p className="text-justify">
               {" "}
-              From 1939 to 1951 Joe and Clara went every summer to Jacob’s
-              Pillow, a well-known dance camp in the Berkshire Mountains. He was
-              a friend and teacher to such renowned dancer/choreographers as Ted
-              Shawn, Ruth St. Denis, Martha Graham and Jerome Robbins and many
-              required their dancers to go to Joe. Hanya Holm even incorporated
-              Joe’s exercises into her students’ lessons. However, Joe counted
-              many socialites as well as plumbers and doctors, to list a few, as
-              his clients as well. Joe called himself “Director of Physical
-              Culture.” <br />
+              From 1939 to 1951 Joe and Clara went every summer to "Jacob’s
+              Pillow", a well-known dance camp in the Berkshire Mountains. He
+              was a friend and teacher to such renowned dancer/choreographers as
+              Ted Shawn, Ruth St. Denis, Martha Graham and Jerome Robbins and
+              many required their dancers to go to Joe. Hanya Holm even
+              incorporated Joe’s exercises into her students’ lessons. However,
+              Joe counted many socialites as well as plumbers and doctors, to
+              list a few, as his clients as well. Joe called himself “Director
+              of Physical Culture.” <br />
               Joe felt his work was “50 years ahead of his time.” He believed in
               “natural movements” with the emphasis on doing and being. He has
               stated,{" "}

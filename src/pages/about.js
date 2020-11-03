@@ -17,14 +17,7 @@ const StyledContainer = styled(Container)`
   background-image: url(${texture1});
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
 `
-const StyledTextCardLeft = styled.div`
-  display: flex;
-  padding: 1rem 1rem 0rem;
-  @media (max-width: 991px) {
-    text-align: justify;
-  }
-`
-const StyledTextCardRight = styled.div`
+const StyledTextCard = styled.div`
   display: flex;
   padding: 1rem 1rem 0rem;
   @media (max-width: 991px) {
@@ -59,7 +52,7 @@ const About = ({ data }) => {
         <h2 className="text-center pt-3">About Me</h2>
         <Row className="mt-3 mb-3 text-left">
           <StyledCol xs={12} md={12} lg={{ span: 6, offset: 1 }}>
-            <StyledTextCardLeft>
+            <StyledTextCard>
               <p>
                 I started to work as a certificate Pilates instructor for mat
                 and apparatus on 2009. <br />
@@ -75,7 +68,7 @@ const About = ({ data }) => {
                 Prenzlauer Berg | Charlottenburg | Weißensee | Karlshorst |
                 Mitte{" "}
               </p>
-            </StyledTextCardLeft>
+            </StyledTextCard>
           </StyledCol>
           <Col xs={12} md={12} lg={4} className="justify-content-center d-flex">
             <StyledImg
@@ -104,7 +97,7 @@ const About = ({ data }) => {
             md={{ order: "first", span: 12 }}
             lg={{ order: "last", span: 6 }}
           >
-            <StyledTextCardRight>
+            <StyledTextCard>
               <p className="pt-4"></p>
               <p>
                 I am an athlete and a dancer from an early age. Dancing has
@@ -121,17 +114,16 @@ const About = ({ data }) => {
                 The classes are suitable for all levels and conditions, focusing
                 on the participant’s personal needs.
               </p>{" "}
-            </StyledTextCardRight>
+            </StyledTextCard>
           </StyledCol>
         </Row>
-
-        <Row className="pb-3 text-justify">
+        <Row className=" text-justify">
           <StyledCol
             xs={{ span: 12, offset: 0 }}
             md={{ span: 12, offset: 0 }}
             lg={{ span: 10, offset: 1 }}
           >
-            <StyledTextCardLeft>
+            <StyledTextCard>
               <p>
                 On the years 2013-2016, I was also working daily with disabled
                 and amputee in a soldier's rehabilitation center "Bet Halochem"
@@ -141,7 +133,7 @@ const About = ({ data }) => {
                 humor and fun atmosphere. My classes are in English, German and
                 Hebrew.
               </p>
-            </StyledTextCardLeft>
+            </StyledTextCard>
           </StyledCol>
         </Row>
         <Row className="p-3">
@@ -149,7 +141,7 @@ const About = ({ data }) => {
             <StyledImageWide
               fluid={data.reformerLegsUp.childImageSharp.fluid}
               alt={data.reformerLegsUp.name}
-              className="rounded"
+              className="rounded mb-3"
             />
           </StyledCol>
         </Row>
@@ -186,14 +178,7 @@ export const query = graphql`
         }
       }
     }
-    oryanBack: file(relativePath: { eq: "oryan-reformer-back.jpg" }) {
-      name
-      childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
+
     wallClass: file(relativePath: { eq: "wall-class-stretch.jpg" }) {
       name
       childImageSharp {

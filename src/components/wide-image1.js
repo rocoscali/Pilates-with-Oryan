@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import wideImg1 from "../assets/img/ref-wide1.jpg"
+import wideImg1 from "../assets/img/reformer-legs-lift.jpg"
 
 const Image = styled.div`
   display: block;

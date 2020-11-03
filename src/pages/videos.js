@@ -15,13 +15,13 @@ const Videos = props => {
         <div className="row">
           <div className="col-md-6 p-2">
             <Video
-              title="video1"
+              title="30 Min Pilates Fun Fusion Workout"
               videoSrc="https://www.youtube.com/embed/aYB04uI51nE"
             />
           </div>
           <div className="col-md-6 p-2">
             <Video
-              title="video2"
+              title="30 Min Pilates Reformer Inspired On The Mat"
               videoSrc="https://www.youtube.com/embed/hFxgiIBJWiU"
             />
           </div>
@@ -29,21 +29,27 @@ const Videos = props => {
         <div className="row">
           <div className="col-md-6 p-2">
             <Video
-              title="video3"
+              title="30 Min Pilates At Home With A Towel"
               videoSrc="https://www.youtube.com/embed/odEIHCRMpaQ"
             />
           </div>
           <div className="col-md-6 p-2">
             <Video
-              title="video4"
+              title="Classical Pilates Mat Class Level 2 | Intermediate"
               videoSrc="https://www.youtube.com/embed/c19pJee-oWg"
             />
           </div>
         </div>
-        <div className="row justify-content-md-center">
+        <div className="row">
           <div className="col-md-6 p-2">
             <Video
-              title="video5"
+              title="40 Min Yogalates Full Body Workout Flow"
+              videoSrc="https://www.youtube.com/embed/o9T6k2nNnGg"
+            />
+          </div>
+          <div className="col-md-6 p-2">
+            <Video
+              title="Pilates Abs Special Workout For All Levels"
               videoSrc="https://www.youtube.com/embed/A2JNzqcMaRQ"
             />
           </div>

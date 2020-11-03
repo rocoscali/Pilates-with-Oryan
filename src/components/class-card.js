@@ -26,11 +26,11 @@ const StyledCard = styled(Card)`
 `
 const StyledImage = styled(Img)`
   transform: scale(1);
-  transition: transform 0.5s ease;
+  /* transition: transform 0.5s ease; */
   margin-bottom: "2rem";
-  &:hover {
+  /* &:hover {
     transform: scale(1.5);
-  }
+  } */
 `
 
 const Overflow = styled.div`

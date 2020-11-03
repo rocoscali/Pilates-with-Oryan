@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button"
 import Img from "gatsby-image"
 import Link from "gatsby-Link"
 import styled from "styled-components"
-import WideImage1 from "./Wide-image1.js"
+import BackgroundImage from "gatsby-background-image"
 
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;
@@ -49,6 +49,31 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `
+const StyledBackgroundImage = styled(BackgroundImage)`
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  z-index: -2;
+
+  @media screen and (max-width: 600px) {
+    background-attachment: scroll;
+  }
+`
+const Overlay = styled.div`
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+`
 
 const Home = props => {
   return (
@@ -75,7 +100,12 @@ const Home = props => {
           release positive energies.
         </p>
       </Container>
-      <WideImage1 />
+      <StyledBackgroundImage
+        fluid={props.data.reformerLegsLift.childImageSharp.fluid}
+        alt={props.data.reformerLegsLift.name}
+      >
+        <Overlay />
+      </StyledBackgroundImage>
       <Container className="text-justify mt-4 mb-4">
         <p>
           While today it’s more commonly known as Pilates, Joseph Pilates
@@ -99,8 +129,8 @@ const Home = props => {
       </Container>
       <Container className="mt-4 mb-4 d-flex justify-content-center">
         <Image
-          fluid={props.data.josephPhoto1.childImageSharp.fluid}
-          alt="oryan-hang-like-monkey"
+          fluid={props.data.josephSidePlank.childImageSharp.fluid}
+          alt={props.data.josephSidePlank.name}
           className="rounded"
         />
       </Container>
@@ -126,6 +156,12 @@ const Home = props => {
           functional contemporary exercises to strengthen and preserve your
           daily movement routine.{" "}
         </p>
+      </Container>
+      <StyledBackgroundImage
+        fluid={props.data.oryanBack.childImageSharp.fluid}
+        alt={props.data.oryanBack.name}
+      ></StyledBackgroundImage>
+      <Container>
         <br />
         <HR className="mt-4 mb-4"></HR>
         <br />
@@ -154,8 +190,8 @@ const Home = props => {
           {" "}
           <StyledImgCol xs={12} md={12} lg={{ span: 5, offset: 0 }}>
             <StyledImg
-              fluid={props.data.monkey.childImageSharp.fluid}
-              alt="oryan-hang-like-monkey"
+              fluid={props.data.monkeyHang.childImageSharp.fluid}
+              alt={props.data.monkeyHang.name}
               className="center rounded"
             />
           </StyledImgCol>
