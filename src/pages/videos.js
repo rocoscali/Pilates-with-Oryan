@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
 import Layout from "../components/Layout"
-import Video from "../components/Video-comp"
+import VideoComp from "../components/VideoComp"
 import SEO from "../components/Seo"
 
 const Videos = props => {
@@ -14,13 +14,13 @@ const Videos = props => {
         </div>
         <div className="row">
           <div className="col-md-6 p-2">
-            <Video
+            <VideoComp
               title="30 Min Pilates Fun Fusion Workout"
               videoSrc="https://www.youtube.com/embed/aYB04uI51nE"
             />
           </div>
           <div className="col-md-6 p-2">
-            <Video
+            <VideoComp
               title="30 Min Pilates Reformer Inspired On The Mat"
               videoSrc="https://www.youtube.com/embed/hFxgiIBJWiU"
             />
@@ -28,13 +28,13 @@ const Videos = props => {
         </div>
         <div className="row">
           <div className="col-md-6 p-2">
-            <Video
+            <VideoComp
               title="30 Min Pilates At Home With A Towel"
               videoSrc="https://www.youtube.com/embed/odEIHCRMpaQ"
             />
           </div>
           <div className="col-md-6 p-2">
-            <Video
+            <VideoComp
               title="Classical Pilates Mat Class Level 2 | Intermediate"
               videoSrc="https://www.youtube.com/embed/c19pJee-oWg"
             />
@@ -42,13 +42,13 @@ const Videos = props => {
         </div>
         <div className="row">
           <div className="col-md-6 p-2">
-            <Video
+            <VideoComp
               title="40 Min Yogalates Full Body Workout Flow"
               videoSrc="https://www.youtube.com/embed/o9T6k2nNnGg"
             />
           </div>
           <div className="col-md-6 p-2">
-            <Video
+            <VideoComp
               title="Pilates Abs Special Workout For All Levels"
               videoSrc="https://www.youtube.com/embed/A2JNzqcMaRQ"
             />

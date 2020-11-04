@@ -1,6 +1,6 @@
 import React from "react"
-import ClassCard from "./Class-card.js"
-import CardDeck from "react-bootstrap/CardDeck"
+import ClassCard from "./ClassCard.js"
+// import CardDeck from "react-bootstrap/CardDeck"
 
 const Cards = props => {
   return (
