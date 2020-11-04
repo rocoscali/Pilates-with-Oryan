@@ -10,12 +10,13 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 module.exports = {
   siteMetadata: {
     title: `Pilates With Oryan`,
-    titleTemplate: "%s · Pilates With Oryan",
-    description: "a website of Oryan Werthaim pilates instructor in Berlin",
-    url: `https://www.pilateswithoryan.com`,
+    titleTemplate: `%s · Pilates With Oryan`,
+    description: `a website of Oryan Werthaim pilates instructor in Berlin`,
+    siteUrl: `https://www.pilateswithoryan.com`,
     image: "./static/favicon.ico",
     author: "Roi Cohen",
-    twitterUsername: "@pilateswithoryan",
+    url: `https://www.pilateswithoryan.com`,
+    twitterUsername: `@pilateswithoryan`,
   },
   plugins: [
     `gatsby-plugin-advanced-sitemap`,

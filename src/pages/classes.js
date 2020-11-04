@@ -9,7 +9,7 @@ import SEO from "../components/Seo"
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;
 `
-const H5 = styled.h5``
+
 const HR = styled.hr`
   border: 3px solid #8db596;
   border-radius: 5px;

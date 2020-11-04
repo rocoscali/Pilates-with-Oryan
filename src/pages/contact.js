@@ -11,7 +11,6 @@ import Image from "react-bootstrap/Image"
 import AboutImage from "../assets/img/face1.jpg"
 import Button from "react-bootstrap/Button"
 import styled from "styled-components"
-import Link from "gatsby-Link"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 
@@ -102,6 +101,7 @@ const Contact = () => {
                   <a
                     href="https://www.facebook.com/PilatesOryan"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FacebookIcon
                       className="m-3"
@@ -113,6 +113,7 @@ const Contact = () => {
                   <a
                     href="https://www.instagram.com/oryan_pilates_berlin"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <InstagramIcon
                       className="m-3"

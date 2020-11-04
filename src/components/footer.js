@@ -32,12 +32,17 @@ const Footer = () => {
     <StyledFooter sticky="bottom">
       <div className="align-items-center d-flex">
         <H5 className="m-2">PILATES WITH ORYAN © </H5>{" "}
-        <a href="https://www.facebook.com/PilatesOryan" target="_blank">
+        <a
+          href="https://www.facebook.com/PilatesOryan"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FacebookIcon fontSize="large" color="primary" className="ml-5" />
         </a>
         <a
           href="https://www.instagram.com/oryan_pilates_berlin"
           target="_blank"
+          rel="noreferrer"
         >
           <InstagramIcon fontSize="large" color="secondary" className="ml-3" />
         </a>
