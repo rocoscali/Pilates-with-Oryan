@@ -1,31 +1,33 @@
 import React from "react"
 import ClassCard from "./Class-card.js"
-// import reformer from "../assets/img/ref-1.jpg"
-// import cadillac from "../assets/img/cad-1.jpg"
-// import chair from "../assets/img/chair-1.jpg"
+import CardDeck from "react-bootstrap/CardDeck"
 
 const Cards = props => {
   return (
     <div>
-      <ClassCard
-        img={props.data.reformer}
-        title="The Reformer"
-        text="The Pilates reformer is an amazing piece of apparatus unlike no
-            other, which helps you to find length and space in the body while
-            under spring tension. Far from just a workout for your core, this
-            piece of apparatus helps create internal pressure to elongate the
-            spine, joints and muscles which then leads to greater flexibility,
-            strength, stamina and a more balanced posture."
-      />
-      <ClassCard
-        img={props.data.cadillac}
-        title="The Cadillac"
-        text="The Pilates Cadillac is a piece of equipment that most closely represents that of a bed with a frame. It takes our classic Mat and adds the springs for support and challenge. The trapeze table was developed in the mid 50's or early 60's. Joseph Pilates, the creator of the Pilates method, made all of his creations in the basement of his building. When he brought it up into the studio, one client saw the table and said 'Hey Joe, is that your new Cadillac?' and the name stuck. Joe possibly got the idea of this table after working with Eve Gentry, one of his clients, in the hospital after her mastectomy."
-      />
+      <CardDeck>
+        <ClassCard
+          img={props.data.reformer}
+          title="Personal Training"
+          text="In this, one on one session, you will get the opportunity to work on your individual needs, using the Apparatus to help you achieve your goals. We will be working on the Reformer, Cadillac, chairs, Pedi-pole, and more.
+Private classes are recommended if you are just starting this method, or if you suffer from injury, or you have a medical condition that requires special needs. if you are an athlete that looking for balanced training to go hand in hand in your sports life."
+        />
+        <ClassCard
+          img={props.data.cadillac}
+          title="Reformer"
+          text="The Reformer is becoming the most popular piece of Pilates equipment around the world. Invented by Joseph Pilates, was originally named for “universally reforming the body” 
+the Pilates Reformer is designed to use spring-resistance methodology to maximize core strength and improve muscular imbalances. 
+Many exercises on the Reformer incorporate Mat Pilates repertoire, is low impact, and involve pulling, pressing, or holding a moving carriage steady while you resist tension from anchored steel springs. 
+One of the best advantages of working on a Reformer is that it’s an incredibly versatile apparatus (more than 500 Exercises) and has the unique ability to have spring tensions adjusted for each exercise and level of ability. This means that in each class, it’s possible to modify, progress, and tailor exercises to everyone - whether it’s for providing more support to the absolute beginner, or more challenge to the most experienced Pilates lovers.
+Reformer Pilates is great for rehab purposes too as it allows the client to exercise in a horizontal plane of motion and not be vertically loaded and weight bearing through their legs."
+        />
+      </CardDeck>
       <ClassCard
         img={props.data.chair}
-        title="The Chair"
-        text="The Pilates chair, also called the wunda chair or low chair, is far from being a newcomer on the block. It has always been a part of any fully equipped Pilates studio and was created by Joseph Pilates himself. Lately, the chairs have been getting a new look, moving into the mainstream and losing their status as one of the 'mysterious' Pilates machines."
+        title="Tower & mat class"
+        text="small groups of up to max. 3 - 4 participants 
+The 'wall unit' or also called 'tower' is a compressed version of the so-called 'Cadillac' of the trapeze table.
+Tower classes are an amazing way to practice the mat and to work with the springs, they enable exercises that would not be possible without the support, but also gives you the opportunity to try new challenges."
       />
     </div>
   )

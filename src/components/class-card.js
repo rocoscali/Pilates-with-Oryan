@@ -5,7 +5,7 @@ import texture1 from "../assets/designs/black-thread-light.png"
 import Img from "gatsby-image"
 
 const StyledCard = styled(Card)`
-  margin: 2rem 0 5rem;
+  margin: 1rem 0 5rem;
   background: #fcf7ed;
   background-image: url(${texture1});
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15) !important;

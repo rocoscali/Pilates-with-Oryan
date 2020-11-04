@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import Link from "gatsby-Link"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
+import "./homestyles.scss"
 
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;
@@ -49,24 +50,34 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `
-const StyledBackgroundImage = styled(BackgroundImage)`
-  display: block;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 100%;
-  height: 30rem;
-  z-index: -2;
+// const StyledBackgroundImage = styled(BackgroundImage)`
+//   &::before {
+//   }
+//   ,
+//   &::after {
+//     display: block;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     position: relative;
+//     width: 100%;
+//     height: 30rem;
+//     z-index: -2;
+//   }
 
-  @media screen and (max-width: 600px) {
-    background-attachment: scroll;
-  }
-`
+//   @media (max-width: 768px) {
+//     &::before {
+//     }
+//     ,
+//     &::after {
+//       background-attachment: scroll;
+//     }
+//   }
+// `
 const Overlay = styled.div`
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -100,12 +111,13 @@ const Home = props => {
           release positive energies.
         </p>
       </Container>
-      <StyledBackgroundImage
+      <BackgroundImage
+        className="bg"
         fluid={props.data.reformerLegsLift.childImageSharp.fluid}
         alt={props.data.reformerLegsLift.name}
       >
         <Overlay />
-      </StyledBackgroundImage>
+      </BackgroundImage>
       <Container className="text-justify mt-4 mb-4">
         <p>
           While today it’s more commonly known as Pilates, Joseph Pilates
@@ -157,24 +169,28 @@ const Home = props => {
           daily movement routine.{" "}
         </p>
       </Container>
-      <StyledBackgroundImage
+      <BackgroundImage
+        className="bg"
         fluid={props.data.oryanBack.childImageSharp.fluid}
         alt={props.data.oryanBack.name}
-      ></StyledBackgroundImage>
-      <Container>
+      >
+        <Overlay />
+      </BackgroundImage>
+      <Container className="text-center">
         <br />
-        <HR className="mt-4 mb-4"></HR>
+        {/* <HR className="mt-4 mb-4"></HR> */}
         <br />
         <p className="text-center">
           Especially for Covid19 days, I recorded video classes for you to
           practice at home. <br /> The videos are free and available at any time
-          you need it. <br /> <br />
-          <Button className="btn-lg w-35" variant="info" type="submit">
-            <StyledLink to="/videos">To The Videos</StyledLink>
-          </Button>
-        </p>
+          you need it.{" "}
+        </p>{" "}
         <br />
-        <HR className="mt-4 mb-4"></HR>
+        <Button className=" btn-lg w-35" variant="info" type="submit">
+          <StyledLink to="/videos">To The Videos</StyledLink>
+        </Button>
+        <br />
+        {/* <HR className="mt-4 mb-4"></HR> */}
         <br />
         <H5 className="text-center mt-3 mb-3">
           As you lay down on the mat, clear your mind and concentrate on the
@@ -185,8 +201,7 @@ const Home = props => {
           progress, the stronger you will get. <br />
           Then you will be able to perform a more complex movement.{" "}
         </p>
-
-        <Row className="mt-5">
+        <Row className="mt-5 mb-5">
           {" "}
           <StyledImgCol xs={12} md={12} lg={{ span: 5, offset: 0 }}>
             <StyledImg

@@ -54,19 +54,18 @@ const About = ({ data }) => {
           <StyledCol xs={12} md={12} lg={{ span: 6, offset: 1 }}>
             <StyledTextCard>
               <p>
-                I started to work as a certificate Pilates instructor for mat
-                and apparatus on 2009. <br />
-                <br />
-                My journey as an instructor started in several fitness and
-                pilates studios in Tel-Aviv, Israel.
-                <br />
-                <br /> I was also working daily with disabled and amputees in a
-                soldier's rehabilitation center for 3 years. <br />
-                <br />
-                Since 2016 I live in Berlin and teaches in several studios in
-                the city – <br />
-                Prenzlauer Berg | Charlottenburg | Weißensee | Karlshorst |
-                Mitte{" "}
+                I am an athlete and a dancer from an early age.
+                <br /> Dancing has always fostered a strong bond between my body
+                and mind. <br />
+                During training, I've been exposed to Pilates as a method for
+                body maintenance, recovery, and improvement.
+                <br /> I always liked working with people so after I completed
+                my B. A in psychology, I immediately started my Pilates
+                certification training. <br />I work as a certificate Pilates
+                instructor for mat and apparatus since 2009.
+                <br /> Over the years I have attended courses on back pain,
+                neuromuscular problem, shoulder injuries, trigger point, fascia
+                Release Techniques, and much more.
               </p>
             </StyledTextCard>
           </StyledCol>
@@ -100,19 +99,22 @@ const About = ({ data }) => {
             <StyledTextCard>
               <p className="pt-4"></p>
               <p>
-                I am an athlete and a dancer from an early age. Dancing has
-                always fostered the strong bond between my body and mind. <br />
-                During training I've been exposed to Pilates as a method for
-                body maintaining, recovery and improvement. I always liked
-                working with people and after I complete a degree in psychology,
-                I immediately started the studies for teaching Pilates.
-                <br />
-                Pilates is suitable for any purpose – fitness, better posture,
-                athlete’s performance improvement, injury rehabilitation and
-                simply to keep on great feeling with a balanced body. <br />I am
-                offering Private, Duo or Group classes with mat or apparatus.
-                The classes are suitable for all levels and conditions, focusing
-                on the participant’s personal needs.
+                During the years 2013-2016, I was working daily with disabled
+                and amputee in a soldier's rehabilitation center "Bet Halohem"
+                in Tel Aviv.
+                <br /> In 2016 I moved to Berlin where I am continuing my
+                passion for teaching classical and contemporary pilates.
+                <br /> In 2019 I completed Anatomy Trains© “in Structure and
+                Function” course By Tom Mayers. <br /> Pilates is suitable for
+                any purpose – fitness, better posture, athlete’s performance
+                improvement, injury rehabilitation and simply to keep on great
+                feeling with a balanced body. <br />I am offering Private, Duo
+                or Group classes with mat or apparatus. The classes are suitable
+                for all levels and conditions, focusing on the participant’s
+                personal needs.
+                <br /> Every-body is individual and as a trainer, my goal is to
+                see and feel the right alignment for each one that comes to the
+                studio.
               </p>{" "}
             </StyledTextCard>
           </StyledCol>
@@ -125,13 +127,12 @@ const About = ({ data }) => {
           >
             <StyledTextCard>
               <p>
-                On the years 2013-2016, I was also working daily with disabled
-                and amputee in a soldier's rehabilitation center "Bet Halochem"
-                in Tel-Aviv. On 2016 I moved to Berlin where I am continuing my
-                way in several studios with group or private lessons. In my
-                classes I emphasize accuracy and correct movement along with
-                humor and fun atmosphere. My classes are in English, German and
-                Hebrew.
+                In my classes, I emphasize accuracy and correct movement along
+                with humour and a fun atmosphere. Every body is individual, and
+                as a trainer, my goal is to see and feel the right alignment for
+                each person that comes to train. My classes are in English,
+                German, and Hebrew. You are welcome to send your questions and
+                wishes through the contact form.
               </p>
             </StyledTextCard>
           </StyledCol>

@@ -1,6 +1,8 @@
 import React from "react"
 import PhoneIcon from "@material-ui/icons/Phone"
 import EmailIcon from "@material-ui/icons/Email"
+import FacebookIcon from "@material-ui/icons/Facebook"
+import InstagramIcon from "@material-ui/icons/Instagram"
 import Container from "react-bootstrap/Container"
 import Form from "react-bootstrap/Form"
 import Row from "react-bootstrap/Row"
@@ -9,6 +11,7 @@ import Image from "react-bootstrap/Image"
 import AboutImage from "../assets/img/face1.jpg"
 import Button from "react-bootstrap/Button"
 import styled from "styled-components"
+import Link from "gatsby-Link"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 
@@ -23,6 +26,7 @@ const ContactForm = styled(Form)`
     margin-left: 0.5rem;
   }
 `
+
 const Contact = () => {
   return (
     <Layout>
@@ -76,7 +80,7 @@ const Contact = () => {
                   className="shadow"
                   roundedCircle
                   src={AboutImage}
-                  width="100%"
+                  width="70%"
                   alt="oryan-photo"
                 />
               </Col>
@@ -94,6 +98,32 @@ const Contact = () => {
                 <h5>
                   <EmailIcon /> oryanpilates@gmail.com
                 </h5>
+                <p>
+                  <a
+                    href="https://www.facebook.com/PilatesOryan"
+                    target="_blank"
+                  >
+                    <FacebookIcon
+                      className="m-3"
+                      fontSize="large"
+                      color="primary"
+                    />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/oryan_pilates_berlin"
+                    target="_blank"
+                  >
+                    <InstagramIcon
+                      className="m-3"
+                      fontSize="large"
+                      color="secondary"
+                    />
+                  </a>
+                  <a href="mailto:oryanpilates@gmail.com">
+                    <EmailIcon className="m-3" fontSize="large" />
+                  </a>
+                </p>
               </Col>
             </Row>
           </Col>
