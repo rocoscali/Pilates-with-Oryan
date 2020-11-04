@@ -37,7 +37,9 @@ export default Classes
 
 export const query = graphql`
   query {
-    reformer: file(relativePath: { eq: "oryan-on-reformer.jpg" }) {
+    personalTrainingClass: file(
+      relativePath: { eq: "personal-training-class.jpg" }
+    ) {
       name
       childImageSharp {
         fluid(maxWidth: 1920, quality: 100) {
@@ -45,7 +47,7 @@ export const query = graphql`
         }
       }
     }
-    cadillac: file(relativePath: { eq: "oryan-on-cadillac.jpg" }) {
+    reformerClass: file(relativePath: { eq: "reformer-class.jpg" }) {
       name
       childImageSharp {
         fluid(maxWidth: 1920, quality: 100) {
@@ -53,7 +55,7 @@ export const query = graphql`
         }
       }
     }
-    chair: file(relativePath: { eq: "oryan-on-chair.jpg" }) {
+    wallUnit: file(relativePath: { eq: "wallunit-class.jpg" }) {
       name
       childImageSharp {
         fluid(maxWidth: 1920, quality: 100) {

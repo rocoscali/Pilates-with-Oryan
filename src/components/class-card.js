@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import Card from "react-bootstrap/Card"
+// import Button from "react-bootstrap/Button"
+// import Modaltest from "./modaltest"
 import styled from "styled-components"
 import texture1 from "../assets/designs/black-thread-light.png"
 import Img from "gatsby-image"
@@ -43,11 +45,16 @@ const Overflow = styled.div`
 `
 
 const ClassCard = props => {
+  // const [modalShow, setModalShow] = useState(false)
   return (
     <StyledCard>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.text}</Card.Text>
+        {/* <Button variant="info" onClick={() => setModalShow(true)}>
+          More info
+        </Button>
+        <Modaltest show={modalShow} onHide={() => setModalShow(false)} /> */}
         <Overflow>
           <StyledImage
             alt={props.img.name}
