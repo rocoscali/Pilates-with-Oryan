@@ -9,7 +9,7 @@ const Videos = props => {
     <Layout>
       <SEO />
       <Container>
-        <div className="text-center pb-3 pt-4">
+        <div className="text-center pb-2 pt-4">
           <h2>Try One Of My Videos</h2>
         </div>
         <div className="row">

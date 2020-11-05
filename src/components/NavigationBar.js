@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
-import Link from "gatsby-Link"
+import { Link } from "gatsby"
 import Logo from "./Logo"
 import styled from "styled-components"
 import texture from "../assets/designs/redox-01.png"
@@ -94,7 +94,10 @@ const NavigationBar = () => {
           <Link className="navbar-brand" to="/">
             PILATES WITH ORYAN
           </Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => setActiveNavbar(true)}
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="navbar-nav ml-auto">
               <Nav.Item>

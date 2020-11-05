@@ -1,8 +1,5 @@
 import React from "react"
 import Navbar from "react-bootstrap/Navbar"
-import EmailIcon from "@material-ui/icons/Email"
-import FacebookIcon from "@material-ui/icons/Facebook"
-import InstagramIcon from "@material-ui/icons/Instagram"
 import styled from "styled-components"
 import texture from "../assets/designs/redox-01.png"
 
@@ -24,6 +21,7 @@ const StyledFooter = styled(Navbar)`
 const H5 = styled.h5`
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.2rem;
   color: #fcf8f3;
 `
 
@@ -31,24 +29,7 @@ const Footer = () => {
   return (
     <StyledFooter sticky="bottom">
       <div className="align-items-center d-flex">
-        <H5 className="m-2">PILATES WITH ORYAN © </H5>{" "}
-        <a
-          href="https://www.facebook.com/PilatesOryan"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FacebookIcon fontSize="large" color="primary" className="ml-5" />
-        </a>
-        <a
-          href="https://www.instagram.com/oryan_pilates_berlin"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <InstagramIcon fontSize="large" color="secondary" className="ml-3" />
-        </a>
-        <a href="mailto:oryanpilates@gmail.com">
-          <EmailIcon fontSize="large" className="ml-3" />
-        </a>
+        <H5 className="m-2">PILATES WITH ORYAN © </H5>
       </div>
     </StyledFooter>
   )

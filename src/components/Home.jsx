@@ -4,10 +4,10 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
 import Img from "gatsby-image"
-import Link from "gatsby-Link"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
-import "./homestyles.scss"
+// import "./homestyles.scss"
 
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;
@@ -16,7 +16,9 @@ const H5 = styled.h5`
   font-size: 1.2rem;
 `
 const HR = styled.hr`
-  border: 3px solid #8db596;
+  border-style: solid none none;
+  border-width: 6px;
+  border-color: #8db596;
   border-radius: 5px;
   width: 50%;
 `
@@ -50,31 +52,31 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `
-// const StyledBackgroundImage = styled(BackgroundImage)`
-//   &::before {
-//   }
-//   ,
-//   &::after {
-//     display: block;
-//     background-size: cover;
-//     background-position: center;
-//     background-attachment: fixed;
-//     background-repeat: no-repeat;
-//     position: relative;
-//     width: 100%;
-//     height: 30rem;
-//     z-index: -2;
-//   }
+const StyledBackgroundImage = styled(BackgroundImage)`
+  &::before {
+  }
+  ,
+  &::after {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    z-index: -2;
+  }
 
-//   @media (max-width: 768px) {
-//     &::before {
-//     }
-//     ,
-//     &::after {
-//       background-attachment: scroll;
-//     }
-//   }
-// `
+  @media (max-width: 768px) {
+    &::before {
+    }
+    ,
+    &::after {
+      background-attachment: scroll;
+    }
+  }
+`
 const Overlay = styled.div`
   background-color: #000;
   opacity: 0.5;
@@ -94,7 +96,7 @@ const Home = props => {
         <H4 className="text-center mb-4">
           Classical | Contemporary | Mat & Apparatus
         </H4>
-        <HR></HR>
+        <HR />
         <H5 className="text-center mt-4">
           I believe that if you want something different you have to do
           something different, otherwise nothing changes.
@@ -111,13 +113,13 @@ const Home = props => {
           release positive energies.
         </p>
       </Container>
-      <BackgroundImage
+      <StyledBackgroundImage
         className="bg"
         fluid={props.data.reformerLegsLift.childImageSharp.fluid}
         alt={props.data.reformerLegsLift.name}
       >
         <Overlay />
-      </BackgroundImage>
+      </StyledBackgroundImage>
       <Container className="text-justify mt-4 mb-4">
         <p>
           While today it’s more commonly known as Pilates, Joseph Pilates
@@ -139,7 +141,7 @@ const Home = props => {
           today.
         </p>
       </Container>
-      <Container className="mt-4 mb-4 d-flex justify-content-center">
+      <Container className="mt-4 mb-2 d-flex justify-content-center">
         <Image
           fluid={props.data.josephSidePlank.childImageSharp.fluid}
           alt={props.data.josephSidePlank.name}
@@ -147,7 +149,7 @@ const Home = props => {
         />
       </Container>
       <Container className="p-3">
-        <H5 className="text-center mt-3 mb-3">
+        <H5 className="text-center mt-2 mb-3">
           <em>
             {" "}
             "In 10 sessions you'll feel the difference, in 20 you'll see the
@@ -169,13 +171,13 @@ const Home = props => {
           daily movement routine.{" "}
         </p>
       </Container>
-      <BackgroundImage
+      <StyledBackgroundImage
         className="bg"
         fluid={props.data.oryanBack.childImageSharp.fluid}
         alt={props.data.oryanBack.name}
       >
         <Overlay />
-      </BackgroundImage>
+      </StyledBackgroundImage>
       <Container className="text-center">
         <br />
         {/* <HR className="mt-4 mb-4"></HR> */}
@@ -226,7 +228,7 @@ const Home = props => {
             <br />
             <p>
               Are you ready for a journey of coming to the studio and doing the
-              work? I will be very happy to guide you through it!
+              work? I am waiting to guide you through it!
             </p>
           </StyledTextCol>
         </Row>

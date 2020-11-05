@@ -19,6 +19,7 @@ module.exports = {
     twitterUsername: `@pilateswithoryan`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

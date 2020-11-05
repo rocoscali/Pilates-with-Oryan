@@ -10,7 +10,7 @@ import texture1 from "../assets/designs/black-thread-light.png"
 import SEO from "../components/Seo"
 
 const StyledContainer = styled(Container)`
-  margin: 2rem auto 2rem;
+  margin: 1rem auto 2rem;
   width: 90%;
   flex: 1 1 auto;
   background: #fcf7ed;
@@ -22,10 +22,19 @@ const StyledTextCard = styled.div`
   padding: 1rem 1rem 0rem;
   @media (max-width: 991px) {
     text-align: justify;
+    padding: 1rem 0rem 0rem;
   }
 `
 const StyledCol = styled(Col)`
   display: flex;
+  justify-content: center;
+`
+const StyledColWide = styled(Col)`
+  display: flex;
+  padding: 0rem 1rem 0rem;
+  @media (max-width: 991px) {
+    padding: 0rem;
+  }
 `
 const StyledImageWide = styled(Img)`
   display: flex;
@@ -48,9 +57,11 @@ const About = ({ data }) => {
   return (
     <Layout>
       <SEO />
+      <div>
+        <h2 className="text-center pt-4 pb-2">About Me</h2>
+      </div>
       <StyledContainer className="rounded">
-        <h2 className="text-center pt-3">About Me</h2>
-        <Row className="mt-3 mb-3 text-left">
+        <Row className=" mb-3 pt-3 text-left">
           <StyledCol xs={12} md={12} lg={{ span: 6, offset: 1 }}>
             <StyledTextCard>
               <p>
@@ -69,28 +80,27 @@ const About = ({ data }) => {
               </p>
             </StyledTextCard>
           </StyledCol>
-          <Col xs={12} md={12} lg={4} className="justify-content-center d-flex">
+          <StyledCol xs={12} md={12} lg={4} className="p-3">
             <StyledImg
               fluid={data.backTeaserCadillac.childImageSharp.fluid}
               alt={data.backTeaserCadillac.name}
               className="rounded"
             />
-          </Col>
+          </StyledCol>
         </Row>
 
         <Row className="mt-3 mb-3 text-left">
-          <Col
+          <StyledCol
             xs={{ order: "last", span: 12 }}
             md={{ order: "last", span: 12 }}
             lg={{ order: "first", span: 4, offset: 1 }}
-            className="justify-content-center d-flex"
           >
             <StyledImg
               fluid={data.cadillacLegsHang.childImageSharp.fluid}
               alt={data.cadillacLegsHang.name}
               className="rounded"
             />
-          </Col>
+          </StyledCol>
           <StyledCol
             xs={{ order: "first", span: 12 }}
             md={{ order: "first", span: 12 }}
@@ -119,7 +129,7 @@ const About = ({ data }) => {
             </StyledTextCard>
           </StyledCol>
         </Row>
-        <Row className=" text-justify">
+        <Row className="text-justify">
           <StyledCol
             xs={{ span: 12, offset: 0 }}
             md={{ span: 12, offset: 0 }}
@@ -128,9 +138,7 @@ const About = ({ data }) => {
             <StyledTextCard>
               <p>
                 In my classes, I emphasize accuracy and correct movement along
-                with humour and a fun atmosphere. Every body is individual, and
-                as a trainer, my goal is to see and feel the right alignment for
-                each person that comes to train. My classes are in English,
+                with humour and a fun atmosphere. My classes are in English,
                 German, and Hebrew. You are welcome to send your questions and
                 wishes through the contact form.
               </p>
@@ -138,13 +146,13 @@ const About = ({ data }) => {
           </StyledCol>
         </Row>
         <Row className="p-3">
-          <StyledCol xs={12} md={12} lg={{ span: 10, offset: 1 }}>
+          <StyledColWide xs={12} md={12} lg={{ span: 10, offset: 1 }}>
             <StyledImageWide
               fluid={data.reformerLegsUp.childImageSharp.fluid}
               alt={data.reformerLegsUp.name}
               className="rounded mb-3"
             />
-          </StyledCol>
+          </StyledColWide>
         </Row>
       </StyledContainer>
     </Layout>
