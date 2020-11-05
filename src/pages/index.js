@@ -1,6 +1,4 @@
 import React from "react"
-import "../styles/index.scss"
-import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/Layout"
 import Home from "../components/Home"
 import { graphql } from "gatsby"
