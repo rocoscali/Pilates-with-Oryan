@@ -7,7 +7,7 @@ import SEO from "../components/Seo"
 const Videos = props => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="Videos" />
       <Container>
         <div className="text-center pb-2 pt-4">
           <h2>Try One Of My Videos</h2>

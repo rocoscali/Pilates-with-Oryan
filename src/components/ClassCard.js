@@ -1,22 +1,25 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
-// import Button from "react-bootstrap/Button"
-// import Modaltest from "./modaltest"
 import styled from "styled-components"
 import texture1 from "../assets/designs/black-thread-light.png"
 import Img from "gatsby-image"
 
 const StyledCard = styled(Card)`
-  margin: 1rem 0 5rem;
+  margin: 0rem 1rem 1rem !important;
   background: #fcf7ed;
   background-image: url(${texture1});
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15) !important;
+  @media (max-width: 991px) {
+    margin: 0rem 0rem 1rem !important;
+  }
   &:hover {
+    background: #fcf7ed;
+    background-image: url(${texture1});
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.25) !important;
   }
   .card-body {
     text-align: center;
-    padding: 1.5rem !important;
+    padding: 1.5rem 1.5rem 0 !important;
   }
   .card-title {
     font-size: 1.5rem;
@@ -27,41 +30,23 @@ const StyledCard = styled(Card)`
   }
 `
 const StyledImage = styled(Img)`
-  transform: scale(1);
-  /* transition: transform 0.5s ease; */
-  margin-bottom: "2rem";
-  /* &:hover {
-    transform: scale(1.5);
-  } */
-`
-
-const Overflow = styled.div`
-  width: 100%;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
+  width: 90%;
   border-radius: 0.25rem;
+  margin: 2rem auto;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 `
 
 const ClassCard = props => {
-  // const [modalShow, setModalShow] = useState(false)
   return (
     <StyledCard>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.text}</Card.Text>
-        {/* <Button variant="info" onClick={() => setModalShow(true)}>
-          More info
-        </Button>
-        <Modaltest show={modalShow} onHide={() => setModalShow(false)} /> */}
-        <Overflow>
-          <StyledImage
-            alt={props.img.name}
-            fluid={props.img.childImageSharp.fluid}
-          />
-        </Overflow>
       </Card.Body>
+      <StyledImage
+        alt={props.img.name}
+        fluid={props.img.childImageSharp.fluid}
+      />
     </StyledCard>
   )
 }

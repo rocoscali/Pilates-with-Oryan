@@ -29,12 +29,19 @@ const ContactForm = styled(Form)`
 const Contact = () => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="Contact" />
       <Container className="p-4">
         <h2 className="text-center">Let's be in touch!</h2>
         <Row>
           <Col className="col-md-8 col-12">
-            <ContactForm>
+            <ContactForm
+              name="contact"
+              method="post"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control placeholder="Full name" />

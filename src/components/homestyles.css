@@ -1,4 +1,5 @@
 .bg,
+.bg::before,
 .bg::after {
   display: block;
   background-size: cover;
@@ -13,6 +14,7 @@
 
 @media (max-width: 768px) {
   .bg,
+  .bg::before,
   .bg::after {
     background-attachment: scroll;
   }

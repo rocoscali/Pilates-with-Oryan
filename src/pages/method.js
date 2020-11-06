@@ -24,7 +24,7 @@ const Image = styled(Img)`
 const method = ({ data }) => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="The Method" />
       <Container>
         <h2 className="text-center mt-4">The Method By Joseph H. Pilates</h2>
         <Row className="mt-4 mb-4">

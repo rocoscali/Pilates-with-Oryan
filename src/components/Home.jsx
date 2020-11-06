@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
-// import "./homestyles.scss"
+import "./homeStyles.css"
 
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;
@@ -52,34 +52,9 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `
-const StyledBackgroundImage = styled(BackgroundImage)`
-  &::before {
-  }
-  ,
-  &::after {
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    height: 30rem;
-    z-index: -2;
-  }
-
-  @media (max-width: 768px) {
-    &::before {
-    }
-    ,
-    &::after {
-      background-attachment: scroll;
-    }
-  }
-`
 const Overlay = styled.div`
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
   top: 0;
   left: 0;
@@ -113,13 +88,13 @@ const Home = props => {
           release positive energies.
         </p>
       </Container>
-      <StyledBackgroundImage
+      <BackgroundImage
         className="bg"
         fluid={props.data.reformerLegsLift.childImageSharp.fluid}
         alt={props.data.reformerLegsLift.name}
       >
         <Overlay />
-      </StyledBackgroundImage>
+      </BackgroundImage>
       <Container className="text-justify mt-4 mb-4">
         <p>
           While today it’s more commonly known as Pilates, Joseph Pilates
@@ -171,13 +146,13 @@ const Home = props => {
           daily movement routine.{" "}
         </p>
       </Container>
-      <StyledBackgroundImage
+      <BackgroundImage
         className="bg"
         fluid={props.data.oryanBack.childImageSharp.fluid}
         alt={props.data.oryanBack.name}
       >
         <Overlay />
-      </StyledBackgroundImage>
+      </BackgroundImage>
       <Container className="text-center">
         <br />
         {/* <HR className="mt-4 mb-4"></HR> */}
@@ -227,8 +202,8 @@ const Home = props => {
             </H5>{" "}
             <br />
             <p>
-              Are you ready for a journey of coming to the studio and doing the
-              work? I am waiting to guide you through it!
+              Are you ready for a journey of discovering the art of control?{" "}
+              <br />I am waiting to guide you through it!
             </p>
           </StyledTextCol>
         </Row>

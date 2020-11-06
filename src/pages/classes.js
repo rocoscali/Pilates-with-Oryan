@@ -20,7 +20,7 @@ const HR = styled.hr`
 const Classes = props => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="Classes" />
       <Container>
         <h2 className="text-center mt-4">Classes</h2>
         <H4 className="text-center mb-4">
@@ -56,6 +56,14 @@ export const query = graphql`
       }
     }
     wallUnit: file(relativePath: { eq: "wallunit-class.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    prenatalClass: file(relativePath: { eq: "pre-natal-class.jpg" }) {
       name
       childImageSharp {
         fluid(maxWidth: 1920, quality: 100) {

@@ -56,7 +56,7 @@ const StyledImg = styled(Img)`
 const About = ({ data }) => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="About" />
       <div>
         <h2 className="text-center pt-4 pb-2">About Me</h2>
       </div>

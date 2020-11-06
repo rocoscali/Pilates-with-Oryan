@@ -17,6 +17,8 @@ module.exports = {
     author: "Roi Cohen",
     url: `https://www.pilateswithoryan.com`,
     twitterUsername: `@pilateswithoryan`,
+    locale: `en_US`,
+    canonical: `https://www.pilateswithoryan.com`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
