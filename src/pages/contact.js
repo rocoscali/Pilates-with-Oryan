@@ -61,12 +61,12 @@ const Contact = ({ data }) => {
               onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="contact form" />
-              <p hidden>
+              {/* <p hidden>
                 <label>
                   Don’t fill this out
                   <input name="bot-field" />
                 </label>
-              </p>
+              </p> */}
 
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>
@@ -96,43 +96,43 @@ const Contact = ({ data }) => {
                   name="message"
                 />
               </Form.Group>
-              <fieldset>
-                <Form.Group controlId="chosenClass">
-                  <Form.Label as="legend">
-                    Choose any of your interests:
-                  </Form.Label>
-                  <Form.Check
-                    name="classTypePrivate"
-                    type="checkbox"
-                    label="Private Pilates"
-                    id="chosenClass1"
-                  />
-                  <Form.Check
-                    name="classTypeDuo"
-                    type="checkbox"
-                    label="Duo Pilates"
-                    id="chosenClass2"
-                  />
-                  <Form.Check
-                    name="classTypeGroup"
-                    type="checkbox"
-                    label="Group Pilates"
-                    id="chosenClass3"
-                  />
-                  <Form.Check
-                    name="classTypeHome"
-                    type="checkbox"
-                    label="Pilates At Home"
-                    id="chosenClass4"
-                  />
-                  <Form.Check
-                    name="classTypeMassage"
-                    type="checkbox"
-                    label="Fascia Massage Therapy"
-                    id="chosenClass5"
-                  />
-                </Form.Group>
-              </fieldset>
+
+              <Form.Group controlId="chosenClass">
+                <Form.Label as="legend">
+                  Choose any of your interests:
+                </Form.Label>
+                <Form.Check
+                  name="classTypePrivate"
+                  type="checkbox"
+                  label="Private Pilates"
+                  id="chosenClass1"
+                />
+                <Form.Check
+                  name="classTypeDuo"
+                  type="checkbox"
+                  label="Duo Pilates"
+                  id="chosenClass2"
+                />
+                <Form.Check
+                  name="classTypeGroup"
+                  type="checkbox"
+                  label="Group Pilates"
+                  id="chosenClass3"
+                />
+                <Form.Check
+                  name="classTypeHome"
+                  type="checkbox"
+                  label="Pilates At Home"
+                  id="chosenClass4"
+                />
+                <Form.Check
+                  name="classTypeMassage"
+                  type="checkbox"
+                  label="Fascia Massage Therapy"
+                  id="chosenClass5"
+                />
+              </Form.Group>
+
               <Button className="btn-lg w-35" variant="info" type="submit">
                 Send
               </Button>
