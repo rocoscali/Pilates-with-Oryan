@@ -24,6 +24,9 @@ const ContactForm = styled(Form)`
   .form-label {
     margin-left: 0.5rem;
   }
+  .form-check {
+    padding-bottom: 0.5rem;
+  }
 `
 
 const Contact = () => {
@@ -44,36 +47,56 @@ const Contact = () => {
               <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>
-                <Form.Control placeholder="Full name" name="full-name" />
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Full name"
+                  name="full-name"
+                />
               </Form.Group>
               <Form.Group controlId="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control placeholder="Email address" name="email" />
+                <Form.Control
+                  required
+                  type="email"
+                  placeholder="Email address"
+                  name="email"
+                />
               </Form.Group>
               <Form.Group controlId="message">
                 <Form.Label>Message</Form.Label>
                 <Form.Control
+                  required
                   as="textarea"
                   rows={3}
                   placeholder="Write to me"
                   name="message"
                 />
               </Form.Group>
-              <Form.Label>Check any of your interests:</Form.Label>
-              <Form.Group id="privateCheckbox">
-                <Form.Check type="checkbox" label="Private Pilates" />
-              </Form.Group>
-              <Form.Group id="duoCheckbox">
-                <Form.Check type="checkbox" label="Duo Pilates" />
-              </Form.Group>
-              <Form.Group id="groupCheckbox">
-                <Form.Check type="checkbox" label="Group Pilates" />
-              </Form.Group>
-              <Form.Group id="atHomeCheckbox">
-                <Form.Check type="checkbox" label="Pilates At Home" />
-              </Form.Group>
-              <Form.Group id="massageCheckbox">
-                <Form.Check type="checkbox" label="Facia Massage Therapy" />
+
+              <Form.Group controlId="chosenClass">
+                <Form.Label>Check any of your interests:</Form.Label>
+                <Form.Check
+                  name="private"
+                  type="checkbox"
+                  label="Private Pilates"
+                />
+                <Form.Check name="duo" type="checkbox" label="Duo Pilates" />
+                <Form.Check
+                  name="group"
+                  type="checkbox"
+                  label="Group Pilates"
+                />
+                <Form.Check
+                  name="at-home"
+                  type="checkbox"
+                  label="Pilates At Home"
+                />
+                <Form.Check
+                  name="fascia-massage"
+                  type="checkbox"
+                  label="Fascia Massage Therapy"
+                />
               </Form.Group>
               <Button className="btn-lg w-35" variant="info" type="submit">
                 Send
@@ -117,7 +140,6 @@ const Contact = () => {
                       color="primary"
                     />
                   </a>
-
                   <a
                     href="https://www.instagram.com/oryan_pilates_berlin"
                     target="_blank"
