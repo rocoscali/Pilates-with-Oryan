@@ -105,35 +105,30 @@ const Contact = ({ data }) => {
                     name="classTypePrivate"
                     type="checkbox"
                     label="Private Pilates"
-                    value="Private Pilates"
                     id="chosenClass1"
                   />
                   <Form.Check
                     name="classTypeDuo"
                     type="checkbox"
                     label="Duo Pilates"
-                    value="Duo Pilates"
                     id="chosenClass2"
                   />
                   <Form.Check
                     name="classTypeGroup"
                     type="checkbox"
                     label="Group Pilates"
-                    value="Group Pilates"
                     id="chosenClass3"
                   />
                   <Form.Check
                     name="classTypeHome"
                     type="checkbox"
                     label="Pilates At Home"
-                    value="Pilates At Home"
                     id="chosenClass4"
                   />
                   <Form.Check
                     name="classTypeMassage"
                     type="checkbox"
                     label="Fascia Massage Therapy"
-                    value="Fascia Massage Therapy"
                     id="chosenClass5"
                   />
                 </Form.Group>
