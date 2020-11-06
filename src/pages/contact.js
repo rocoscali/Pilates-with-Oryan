@@ -58,7 +58,6 @@ const Contact = ({ data }) => {
               method="post"
               data-netlify-honeypot="bot-field"
               data-netlify="true"
-              onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="contact form" />
               <p hidden>
@@ -101,46 +100,41 @@ const Contact = ({ data }) => {
                   <Form.Label as="legend">
                     Choose any of your interests:
                   </Form.Label>
-                  <Form.Label>
-                    <Form.Check
-                      name="classType"
-                      type="checkbox"
-                      value="Private Pilates"
-                    />
-                    Private Pilates
-                  </Form.Label>
-                  <Form.Label>
-                    <Form.Check
-                      name="classType"
-                      type="checkbox"
-                      value="Duo Pilates"
-                    />
-                    Duo Pilates
-                  </Form.Label>
-                  <Form.Label>
-                    <Form.Check
-                      name="classType"
-                      type="checkbox"
-                      value="Group Pilates"
-                    />
-                    Group Pilates
-                  </Form.Label>
-                  <Form.Label>
-                    <Form.Check
-                      name="classType"
-                      type="checkbox"
-                      value="Pilates At Home"
-                    />
-                    Pilates At Home
-                  </Form.Label>
-                  <Form.Label>
-                    <Form.Check
-                      name="classType"
-                      type="checkbox"
-                      value="Fascia Massage Therapy"
-                    />
-                    Fascia Massage Therapy
-                  </Form.Label>
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Private Pilates"
+                    value="Private Pilates"
+                    id="chosenClass1"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Duo Pilates"
+                    value="Duo Pilates"
+                    id="chosenClass2"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Group Pilates"
+                    value="Group Pilates"
+                    id="chosenClass3"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Pilates At Home"
+                    value="Pilates At Home"
+                    id="chosenClass4"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Fascia Massage Therapy"
+                    value="Fascia Massage Therapy"
+                    id="chosenClass5"
+                  />
                 </Form.Group>
               </fieldset>
               <Button className="btn-lg w-35" variant="info" type="submit">
