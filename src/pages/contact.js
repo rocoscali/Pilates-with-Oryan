@@ -1,17 +1,18 @@
 import React from "react"
-import PhoneIcon from "@material-ui/icons/Phone"
-import EmailIcon from "@material-ui/icons/Email"
-import FacebookIcon from "@material-ui/icons/Facebook"
-import InstagramIcon from "@material-ui/icons/Instagram"
+import { graphql } from "gatsby"
+import PhoneIcon from "../assets/designs/phone-icon.png"
+import EmailIcon from "../assets/designs/email-icon-dark.png"
+import FacebookIcon from "../assets/designs/facebook-icon.png"
+import InstagramIcon from "../assets/designs/instagram-icon.png"
+import Image from "react-bootstrap/Image"
 import Container from "react-bootstrap/Container"
 import Form from "react-bootstrap/Form"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Image from "react-bootstrap/Image"
-import AboutImage from "../assets/img/face1.jpg"
 import Button from "react-bootstrap/Button"
 import styled from "styled-components"
 import Layout from "../components/Layout"
+import Img from "gatsby-image"
 import SEO from "../components/Seo"
 
 const ContactForm = styled(Form)`
@@ -28,8 +29,23 @@ const ContactForm = styled(Form)`
     padding-bottom: 0.5rem;
   }
 `
+const StyledIcon = styled(Image)`
+  width: 2rem;
+  margin: 1rem;
+`
+const StyledIconSmall = styled(Image)`
+  width: 1.2rem;
+  margin: 0.5rem;
+`
+const StyledImage = styled(Img)`
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 70%;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
+`
 
-const Contact = () => {
+const Contact = ({ data }) => {
   return (
     <Layout>
       <SEO title="Contact" />
@@ -38,13 +54,14 @@ const Contact = () => {
         <Row>
           <Col className="col-md-8 col-12">
             <ContactForm
-              name="contact"
+              name="contact form"
               method="post"
               netlify-honeypot="bot-field"
               data-netlify="true"
               onSubmit="submit"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contact form" />
+              <input type="hidden" name="bot-field" />
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control
@@ -64,7 +81,7 @@ const Contact = () => {
                 />
               </Form.Group>
               <Form.Group controlId="message">
-                <Form.Label>Message</Form.Label>
+                <Form.Label>Your Message</Form.Label>
                 <Form.Control
                   required
                   as="textarea"
@@ -73,31 +90,43 @@ const Contact = () => {
                   name="message"
                 />
               </Form.Group>
-
-              <Form.Group controlId="chosenClass">
-                <Form.Label>Check any of your interests:</Form.Label>
-                <Form.Check
-                  name="private"
-                  type="checkbox"
-                  label="Private Pilates"
-                />
-                <Form.Check name="duo" type="checkbox" label="Duo Pilates" />
-                <Form.Check
-                  name="group"
-                  type="checkbox"
-                  label="Group Pilates"
-                />
-                <Form.Check
-                  name="at-home"
-                  type="checkbox"
-                  label="Pilates At Home"
-                />
-                <Form.Check
-                  name="fascia-massage"
-                  type="checkbox"
-                  label="Fascia Massage Therapy"
-                />
-              </Form.Group>
+              <fieldset>
+                <Form.Group controlId="chosenClass">
+                  <Form.Label as="legend">
+                    Choose any of your interests:
+                  </Form.Label>
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Private Pilates"
+                    value="Private Pilates"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Duo Pilates"
+                    value="Duo Pilates"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Group Pilates"
+                    value="Group Pilates"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Pilates At Home"
+                    value="Pilates At Home"
+                  />
+                  <Form.Check
+                    name="classType"
+                    type="checkbox"
+                    label="Fascia Massage Therapy"
+                    value="Fascia Massage Therapy"
+                  />
+                </Form.Group>
+              </fieldset>
               <Button className="btn-lg w-35" variant="info" type="submit">
                 Send
               </Button>
@@ -105,13 +134,10 @@ const Contact = () => {
           </Col>
           <Col className="col-md-4 col-12 text-center pt-4">
             <Row>
-              <Col className="mx-auto d-block">
-                <Image
-                  className="shadow"
-                  roundedCircle
-                  src={AboutImage}
-                  width="70%"
-                  alt="oryan-photo"
+              <Col className="d-flex justify-content-center">
+                <StyledImage
+                  fluid={data.profilePhoto.childImageSharp.fluid}
+                  alt={data.profilePhoto.name}
                 />
               </Col>
             </Row>
@@ -123,10 +149,12 @@ const Contact = () => {
                 <br />
                 <h3> Oryan Werthaim</h3>
                 <h5>
-                  <PhoneIcon /> +49-0176-34568126
+                  <StyledIconSmall src={PhoneIcon} alt="contact phone" />{" "}
+                  +49-0176-34568126
                 </h5>
                 <h5>
-                  <EmailIcon /> oryanpilates@gmail.com
+                  <StyledIconSmall src={EmailIcon} alt="contact email" />{" "}
+                  oryanpilates@gmail.com
                 </h5>
                 <p>
                   <a
@@ -134,25 +162,17 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FacebookIcon
-                      className="m-3"
-                      fontSize="large"
-                      color="primary"
-                    />
+                    <StyledIcon src={FacebookIcon} alt="contact icon" />
                   </a>
                   <a
                     href="https://www.instagram.com/oryan_pilates_berlin"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <InstagramIcon
-                      className="m-3"
-                      fontSize="large"
-                      color="secondary"
-                    />
+                    <StyledIcon src={InstagramIcon} alt="contact icon" />
                   </a>
                   <a href="mailto:oryanpilates@gmail.com">
-                    <EmailIcon className="m-3" fontSize="large" />
+                    <StyledIcon src={EmailIcon} alt="contact email icon" />
                   </a>
                 </p>
               </Col>
@@ -165,3 +185,16 @@ const Contact = () => {
 }
 
 export default Contact
+
+export const query = graphql`
+  query {
+    profilePhoto: file(relativePath: { eq: "oryan-profile-photo.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`

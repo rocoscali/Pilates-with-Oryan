@@ -31,16 +31,16 @@ I invite you to choose solo, duo or group class on the reformer."
           <ClassCard
             img={props.data.wallUnit}
             title="Tower & Mat Class"
-            text="Small groups of up to max. 3 - 4 participants 
-The 'wall unit' or also called 'tower' is a compressed version of the so-called 'Cadillac' of the trapeze table.
-Tower classes are an amazing way to practice the mat and to work with the springs, they enable exercises that would not be possible without the support, but also gives you the opportunity to try new challenges. I invite you to choose solo, duo or group class on tower & mat."
+            text="The 'wall unit' or also called 'tower' is a compressed version of the so-called 'Cadillac'. Tower classes are an amazing way to practice the mat and to work with the springs, they enable exercises that would not be possible without the support, but also gives you the opportunity to try new challenges. classes can be private or in small groups of up to 4 participants.training.  I invite you to choose solo, duo or group class on tower & mat."
           />{" "}
         </Col>
         <Col className="p-1" xs={12} md={12} lg={6}>
           <ClassCard
             img={props.data.prenatalClass}
             title="Prenatal & Postnatal"
-            text="In prenatal classes, we strengthen the bottom of the pelvis so that the uterus stays high throughout the pregnancy and maintain the mobility and flexibility of the pelvis in general. We also strengthen the lower abdomen and lower back and the strength of the legs to carry the pregnancy and maintain mobility and uprightness. Emphasis is placed on identifying pelvic floor muscles, breathing, strengthening the lower abdomen, buttocks, and inner thighs."
+            text="During pregnancy, there are changes in the woman's body that require attention. In most cases, the ligaments and muscles in the abdomen lengthen and therefore weaken, and the natural arches of the spine increase. Also, the muscles around the pelvis are weakened like the pelvic floor, thigh, buttocks, and lower abdomen. 
+In prenatal classes,  we will emphasis is placed on identifying pelvic floor muscles, breathing, strengthening the lower abdomen, buttocks, and inner thighs.
+In postnatal classes, we start to heal and build strong foundations in  your “new” post-baby body, which will prevent issues like lower back pain and shoulder and neck tension."
           />
         </Col>
       </CardDeck>
