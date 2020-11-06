@@ -39,16 +39,16 @@ const Contact = () => {
               method="post"
               netlify-honeypot="bot-field"
               data-netlify="true"
+              onSubmit="submit"
             >
-              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>
-                <Form.Control placeholder="Full name" />
+                <Form.Control placeholder="Full name" name="full-name" />
               </Form.Group>
               <Form.Group controlId="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control placeholder="Email address" />
+                <Form.Control placeholder="Email address" name="email" />
               </Form.Group>
               <Form.Group controlId="message">
                 <Form.Label>Message</Form.Label>
@@ -56,6 +56,7 @@ const Contact = () => {
                   as="textarea"
                   rows={3}
                   placeholder="Write to me"
+                  name="message"
                 />
               </Form.Group>
               <Form.Label>Check any of your interests:</Form.Label>
