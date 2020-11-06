@@ -61,7 +61,7 @@ const Contact = ({ data }) => {
               onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="contact form" />
-              <input type="hidden" name="bot-field" />
+              {/* <input type="hidden" name="bot-field" /> */}
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control
