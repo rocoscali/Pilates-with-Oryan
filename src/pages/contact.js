@@ -58,6 +58,7 @@ const Contact = ({ data }) => {
               method="post"
               data-netlify-honeypot="bot-field"
               data-netlify="true"
+              onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="contact form" />
               <p hidden>
@@ -101,35 +102,35 @@ const Contact = ({ data }) => {
                     Choose any of your interests:
                   </Form.Label>
                   <Form.Check
-                    name="classType"
+                    name="classTypePrivate"
                     type="checkbox"
                     label="Private Pilates"
                     value="Private Pilates"
                     id="chosenClass1"
                   />
                   <Form.Check
-                    name="classType"
+                    name="classTypeDuo"
                     type="checkbox"
                     label="Duo Pilates"
                     value="Duo Pilates"
                     id="chosenClass2"
                   />
                   <Form.Check
-                    name="classType"
+                    name="classTypeGroup"
                     type="checkbox"
                     label="Group Pilates"
                     value="Group Pilates"
                     id="chosenClass3"
                   />
                   <Form.Check
-                    name="classType"
+                    name="classTypeHome"
                     type="checkbox"
                     label="Pilates At Home"
                     value="Pilates At Home"
                     id="chosenClass4"
                   />
                   <Form.Check
-                    name="classType"
+                    name="classTypeMassage"
                     type="checkbox"
                     label="Fascia Massage Therapy"
                     value="Fascia Massage Therapy"
