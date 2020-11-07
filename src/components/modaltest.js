@@ -24,19 +24,13 @@ export default function Modaltest(props) {
             className="w-100 text-center"
             id="contained-modal-title-vcenter"
           >
-            Personal Training
+            Thank you for getting in touch!
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            In this, one on one session, you will get the opportunity to work on
-            your individual needs, using the Apparatus to help you achieve your
-            goals. We will be working on the Reformer, Cadillac, chairs,
-            Pedi-pole, and more. Private classes are recommended if you are just
-            starting this method, or if you suffer from injury, or you have a
-            medical condition that requires special needs. if you are an athlete
-            that looking for balanced training to go hand in hand in your sports
-            life."
+            Your message has been successfully sent. <br />I will contact you
+            very soon!
           </p>
           {/* <Image
             className="mr-3 shadow w-100"

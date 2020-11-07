@@ -49,5 +49,13 @@ export const query = graphql`
         }
       }
     }
+    oryanTeaser: file(relativePath: { eq: "oryan-back-lay.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 2000, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
   }
 `

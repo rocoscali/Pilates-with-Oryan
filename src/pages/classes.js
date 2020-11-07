@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    prenatalClass: file(relativePath: { eq: "pre-natal-class-.jpg" }) {
+    prenatalClass: file(relativePath: { eq: "pre-natal-class.jpg" }) {
       name
       childImageSharp {
         fluid(maxWidth: 1920, quality: 100) {

@@ -59,14 +59,15 @@ const Contact = ({ data }) => {
               data-netlify-honeypot="bot-field"
               data-netlify="true"
               onSubmit="submit"
+              action="/thank-you"
             >
               <input type="hidden" name="form-name" value="contact form" />
-              {/* <p hidden>
+              <p hidden>
                 <label>
                   Don’t fill this out
                   <input name="bot-field" />
                 </label>
-              </p> */}
+              </p>
 
               <Form.Group controlId="fullName">
                 <Form.Label>Full Name</Form.Label>

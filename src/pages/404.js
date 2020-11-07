@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 const NotFound = () => {
   return (
     <Layout>
-      <Container className="mt-5 text-center ">
+      <Container className="mt-5 mb-5 text-center ">
         <h1>Oops!</h1>
         <h2>This page doesn't exist.</h2>
         <h4>

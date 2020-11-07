@@ -68,13 +68,13 @@ const About = ({ data }) => {
                 I am an athlete and a dancer from an early age.
                 <br /> Dancing has always fostered a strong bond between my body
                 and mind. <br />
-                During training, I've been exposed to Pilates as a method for
-                body maintenance, recovery, and improvement.
-                <br /> I always liked working with people so after I completed
-                my B. A in psychology, I immediately started my Pilates
+                During training, I've been exposed to Pilates as a tool for body
+                maintenance, recovery, and improvement.
+                <br /> I always liked working with people, so after completing
+                my BA in psychology, I immediately started my Pilates
                 certification training. <br />I work as a certificate Pilates
-                instructor for mat and apparatus since 2009.
-                <br /> Over the years I have attended courses on back pain,
+                instructor on mat and apparatus since 2009.
+                <br /> Over the years, I have attended courses on back pain,
                 neuromuscular problem, shoulder injuries, trigger point, fascia
                 Release Techniques, and much more.
               </p>
@@ -109,23 +109,23 @@ const About = ({ data }) => {
             <StyledTextCard>
               <p className="pt-4"></p>
               <p>
-                During the years 2013-2016, I was working daily with disabled
-                and amputee in a soldier's rehabilitation center "Bet Halohem"
-                in Tel Aviv.
-                <br /> In 2016 I moved to Berlin where I am continuing my
-                passion for teaching classical and contemporary pilates.
-                <br /> In 2019 I completed Anatomy Trains© “in Structure and
-                Function” course By Tom Mayers. <br /> Pilates is suitable for
-                any purpose – fitness, better posture, athlete’s performance
-                improvement, injury rehabilitation and simply to keep on great
-                feeling with a balanced body. <br />I am offering Private, Duo
-                or Group classes with mat or apparatus. The classes are suitable
-                for all levels and conditions, focusing on the participant’s
-                personal needs.
-                <br /> Every-body is individual and as a trainer, my goal is to
+                During the years 2013-2016, I worked daily with disabled and
+                amputees in a soldier's rehabilitation center "Bet Halohem" in
+                Tel Aviv.
+                <br /> In 2016 I moved to Berlin, where I continue my passion
+                for teaching classical and contemporary pilates.
+                <br /> In 2019 I completed the Anatomy Trains© "in Structure and
+                Function" course By Tom Mayers. <br />
+                Pilates is suitable for any purpose – fitness, better posture,
+                athlete's performance improvement, injury rehabilitation, and to
+                keep on great feeling with a balanced body.
+                <br />I am offering Private, Duo or Group classes with mat or
+                apparatus. The lessons are suitable for all levels and
+                conditions, focusing on the participant's personal needs.
+                <br /> Every-body is individual, and as a trainer, my goal is to
                 see and feel the right alignment for each one that comes to the
                 studio.
-              </p>{" "}
+              </p>
             </StyledTextCard>
           </StyledCol>
         </Row>
@@ -137,8 +137,8 @@ const About = ({ data }) => {
           >
             <StyledTextCard>
               <p>
-                In my classes, I emphasize accuracy and correct movement along
-                with humour and a fun atmosphere. My classes are in English,
+                In my classes, I emphasize accuracy and correct movement, along
+                with humor and a fun atmosphere. My classes are in English,
                 German, and Hebrew. You are welcome to send your questions and
                 wishes through the contact form.
               </p>

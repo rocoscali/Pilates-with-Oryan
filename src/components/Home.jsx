@@ -76,16 +76,15 @@ const Home = props => {
           I believe that if you want something different you have to do
           something different, otherwise nothing changes.
         </H5>
-        <p className="text-justify p-2 ">
-          {" "}
-          To change your posture or your fitness level you have to do something
+        <p className="text-center p-2 ">
+          To change your posture or your fitness level, you have to do something
           different. Through Pilates, you will learn how to think and move
-          differently, to be more focus and coordinate with your body and mind.
-          The training strengthens the body evenly and corrects a sloppy
-          posture. By practicing regularly, you will find physical vitality and
-          stimulate your mind by engaging in intense exercise. Your mood rises,
-          because controlled bodywork creates self-confidence, with which you
-          release positive energies.
+          differently, be more focused, and be more coordinated with your body
+          and mind.
+          <br />
+          While today it is more commonly known as "Pilates", Joseph Pilates
+          actually called his training method "Contrology" ("The Art of
+          Control").
         </p>
       </Container>
       <BackgroundImage
@@ -95,25 +94,15 @@ const Home = props => {
       >
         <Overlay />
       </BackgroundImage>
-      <Container className="text-justify mt-4 mb-4">
+      <Container className="text-center mt-4 mb-4">
         <p>
-          While today it’s more commonly known as Pilates, Joseph Pilates
-          actually called his exercise method “Contrology” ("The Art of Control"
-          as he stated it). Joseph explains{" "}
+          Joseph explains:{" "}
           <em>
             “To be able to perform movements smoothly and fluently, you have to
             concentrate on every single part, every muscle of your body at every
             moment. This is the only way to gain control over every aspect of
             every training moment .”
-          </em>{" "}
-          <br /> In his book, “Return To Life”, he claims that{" "}
-          <em>
-            “Contrology develops the body uniformly, corrects wrong postures,
-            restores physical vitality, invigorates the mind, and elevates the
-            spirit.”{" "}
           </em>
-          That is exactly what the Pilates training method still stands for
-          today.
         </p>
       </Container>
       <Container className="mt-4 mb-2 d-flex justify-content-center">
@@ -132,24 +121,16 @@ const Home = props => {
           </em>
           <br /> - Joseph Pilates
         </H5>
-        <p className="text-justify">
-          To get the best results I recommend at least 2-3 sessions a week of
+        <p className="text-center">
+          To get the best results, I recommend at least 2-3 sessions a week of
           practice, apparatus class, or a mat class with small equipment
-          (elastic band, fitness ball, magic ring, etc...). <br /> In the
-          apparatus classes, we use classical apparatus such as Reformer,
-          Cadilac, High Chair, Wunda Chair, Pedi pole, Ladder Barrel, and more.
-          The classes are designed especially for each individual needs. <br />
-          In the mat classes, you will learn the 34 classic exercises using only
-          a mat and your Bodyweight. This is the original sequences that Joseph
-          Pilates published in his book from 1945. <br /> I will also add some
-          functional contemporary exercises to strengthen and preserve your
-          daily movement routine.{" "}
+          (elastic band, fitness ball, magic ring, etc.).
         </p>
       </Container>
       <BackgroundImage
         className="bg"
-        fluid={props.data.oryanBack.childImageSharp.fluid}
-        alt={props.data.oryanBack.name}
+        fluid={props.data.oryanTeaser.childImageSharp.fluid}
+        alt={props.data.oryanTeaser.name}
       >
         <Overlay />
       </BackgroundImage>
@@ -170,11 +151,11 @@ const Home = props => {
         {/* <HR className="mt-4 mb-4"></HR> */}
         <br />
         <H5 className="text-center mt-3 mb-3">
-          As you lay down on the mat, clear your mind and concentrate on the
+          As you lay down on the mat, clear your mind, and concentrate on the
           movements
         </H5>
         <p className="text-center">
-          The more you practice, the more you will progress. the more you
+          The more you practice, the more you will progress. The more you
           progress, the stronger you will get. <br />
           Then you will be able to perform a more complex movement.{" "}
         </p>
@@ -191,10 +172,9 @@ const Home = props => {
             <H5 className="mt-3">With all being serious, you must have fun!</H5>
             <br />{" "}
             <p>
-              My students say that the studio is kind of a playground, it's so
-              much fun to hang like a monkey, to roll up and down, to flip
-              upside down and so much more using any of Joseph’s apparatus
-              creations.
+              My students say the studio is kind of a playground. It's so much
+              fun to hang like a monkey, roll, flip upside down, and so much
+              more.
             </p>
             <br />
             <H5>
