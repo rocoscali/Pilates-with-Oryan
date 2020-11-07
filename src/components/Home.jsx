@@ -81,10 +81,6 @@ const Home = props => {
           different. Through Pilates, you will learn how to think and move
           differently, be more focused, and be more coordinated with your body
           and mind.
-          <br />
-          While today it is more commonly known as "Pilates", Joseph Pilates
-          actually called his training method "Contrology" ("The Art of
-          Control").
         </p>
       </Container>
       <BackgroundImage
@@ -96,7 +92,9 @@ const Home = props => {
       </BackgroundImage>
       <Container className="text-center mt-4 mb-4">
         <p>
-          Joseph explains:{" "}
+          While today it is more commonly known as "Pilates", Joseph Pilates
+          actually called his training method "Contrology" ("The Art of
+          Control"). Joseph explains:{" "}
           <em>
             “To be able to perform movements smoothly and fluently, you have to
             concentrate on every single part, every muscle of your body at every
