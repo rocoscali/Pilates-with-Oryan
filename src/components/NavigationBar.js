@@ -36,7 +36,7 @@ const StyledNavbar = styled.div`
     font-family: "Josefin Sans", sans-serif;
     color: #fcf8f3;
     font-size: 1.4rem;
-    padding-top: 8px;
+    padding: 4px 0 0 2px;
     margin: 0px;
     justify-content: left;
     text-justify: left;
@@ -90,7 +90,9 @@ const NavigationBar = () => {
         onMouseOut={() => setActiveNavbar(false)}
       >
         <Container>
-          <Logo />
+          <Link to="/">
+            <Logo />
+          </Link>
           <Link className="navbar-brand" to="/">
             PILATES WITH ORYAN
           </Link>

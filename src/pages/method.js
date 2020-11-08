@@ -209,7 +209,7 @@ export const query = graphql`
     joseph52: file(relativePath: { eq: "joseph-at-52.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -217,7 +217,7 @@ export const query = graphql`
     josephBalance: file(relativePath: { eq: "joseph-balance.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -225,7 +225,7 @@ export const query = graphql`
     josephBackBend: file(relativePath: { eq: "joseph-back-bend.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -233,7 +233,7 @@ export const query = graphql`
     josephReformer: file(relativePath: { eq: "joseph-reformer.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -241,7 +241,7 @@ export const query = graphql`
     josephClara: file(relativePath: { eq: "joseph_and_clara.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

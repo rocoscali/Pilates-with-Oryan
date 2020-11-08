@@ -70,7 +70,7 @@ const About = ({ data }) => {
                 and mind. <br />
                 During training, I've been exposed to Pilates as a tool for body
                 maintenance, recovery, and improvement.
-                <br /> I always liked working with people, so after completing
+                <br /> I always liked working with people, and after completing
                 my BA in psychology, I immediately started my Pilates
                 certification training. <br />I work as a certificate Pilates
                 instructor on mat and apparatus since 2009.
@@ -116,12 +116,11 @@ const About = ({ data }) => {
                 for teaching classical and contemporary pilates.
                 <br /> In 2019 I completed the Anatomy Trains© "in Structure and
                 Function" course By Tom Mayers. <br />
-                Pilates is suitable for any purpose – fitness, better posture,
-                athlete's performance improvement, injury rehabilitation, and to
-                keep on great feeling with a balanced body.
-                <br />I am offering Private, Duo or Group classes with mat or
-                apparatus. The lessons are suitable for all levels and
-                conditions, focusing on the participant's personal needs.
+                <br />
+                These days I work in several studios in Berlin, training classic
+                and contemporary pilates on apparatus classes and mat groups.
+                The lessons are suitable for all levels and conditions, focusing
+                on the participant's personal needs.
                 <br /> Every-body is individual, and as a trainer, my goal is to
                 see and feel the right alignment for each one that comes to the
                 studio.
@@ -166,7 +165,7 @@ export const query = graphql`
     reformerLegsUp: file(relativePath: { eq: "reformer-legs-up.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -174,7 +173,7 @@ export const query = graphql`
     cadillacLegsHang: file(relativePath: { eq: "cadillac-legs-hang.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -182,7 +181,7 @@ export const query = graphql`
     backTeaserCadillac: file(relativePath: { eq: "back-teaser-cadillac.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -191,7 +190,7 @@ export const query = graphql`
     wallClass: file(relativePath: { eq: "wall-class-stretch.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

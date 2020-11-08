@@ -27,6 +27,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Josefin Sans`,
+            variants: [`300`, `400`, `500`, `600`],
+          },
+          {
+            family: `Montserrat`,
+            variants: [`100`, `200`, `300`, `400`, `500`, `600`],
+          },
+        ],
+      },
+    },
 
     {
       resolve: `gatsby-source-filesystem`,

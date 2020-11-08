@@ -42,7 +42,7 @@ export const query = graphql`
     ) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -50,7 +50,7 @@ export const query = graphql`
     reformerClass: file(relativePath: { eq: "reformer-class.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -58,7 +58,7 @@ export const query = graphql`
     wallUnit: file(relativePath: { eq: "wallunit-class.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -66,7 +66,7 @@ export const query = graphql`
     prenatalClass: file(relativePath: { eq: "pre-natal-class.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

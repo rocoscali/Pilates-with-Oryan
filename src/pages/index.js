@@ -20,7 +20,7 @@ export const query = graphql`
     monkeyHang: file(relativePath: { eq: "oryan-monkey-hang.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -28,7 +28,7 @@ export const query = graphql`
     josephSidePlank: file(relativePath: { eq: "joseph-side-plank.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
+        fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -36,15 +36,7 @@ export const query = graphql`
     reformerLegsLift: file(relativePath: { eq: "reformer-legs-lift.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    oryanBack: file(relativePath: { eq: "oryan-reformer-back.jpg" }) {
-      name
-      childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1920, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -52,7 +44,7 @@ export const query = graphql`
     oryanTeaser: file(relativePath: { eq: "oryan-back-lay.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1920, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
