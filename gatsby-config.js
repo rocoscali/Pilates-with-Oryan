@@ -11,7 +11,10 @@ module.exports = {
   siteMetadata: {
     title: `Pilates With Oryan`,
     titleTemplate: `%s · Pilates With Oryan`,
-    description: `a website of Oryan Werthaim pilates instructor in Berlin`,
+    description: `Pilates classes in Berlin -
+    Classical, Contemporary, Mat & Apparatus. 
+    Pilates guides you on how to think and move differently, 
+    be more focused, and be more coordinated with your body and mind.`,
     siteUrl: `https://www.pilateswithoryan.com`,
     image: "./static/favicon.ico",
     author: "Roi Cohen",
@@ -21,6 +24,7 @@ module.exports = {
     canonical: `https://www.pilateswithoryan.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-react-helmet`,

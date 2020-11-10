@@ -56,7 +56,12 @@ const StyledImg = styled(Img)`
 const About = ({ data }) => {
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO
+        title="About"
+        description=" I work in several studios in Berlin, training classic and contemporary pilates on apparatus classes and mat groups. 
+        The lessons are suitable for all levels and conditions, focusing on the participant's personal needs.
+Every-body is individual, and as a trainer, my goal is to see and feel the right alignment for each one that comes to the studio."
+      />
       <div>
         <h2 className="text-center pt-4 pb-2">About Me</h2>
       </div>

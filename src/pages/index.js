@@ -7,7 +7,7 @@ import SEO from "../components/Seo"
 const Homepage = props => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="Pilates Classes In Berlin" />
       <Home data={props.data} />
     </Layout>
   )

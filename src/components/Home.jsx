@@ -78,9 +78,8 @@ const Home = props => {
         </H5>
         <p className="text-center p-2 ">
           To change your posture or your fitness level, you have to do something
-          different. Through Pilates, you will learn how to think and move
-          differently, be more focused, and be more coordinated with your body
-          and mind.
+          different. Pilates guides you on how to think and move differently, be
+          more focused, and be more coordinated with your body and mind.
         </p>
       </Container>
       <BackgroundImage
