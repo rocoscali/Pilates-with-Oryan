@@ -28,6 +28,8 @@ const SEO = ({ title, description, image, article }) => {
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta property="og:type" content="website" />
+      <meta property="locale" content="en_US" />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
@@ -74,6 +76,7 @@ const query = graphql`
         siteUrl: url
         defaultImage: image
         twitterUsername
+        locale
       }
     }
   }
