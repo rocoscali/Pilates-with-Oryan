@@ -11,16 +11,6 @@ const StyledNavbar = styled.div`
   .navbar {
     background: transparent;
     transition: background-color 0.7s linear;
-    /* &:hover {
-      background: #8db596;
-      background-image: url(${texture}),
-        linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.3)
-        );
-    } */
   }
   .navbar.active {
     background: #8db596;

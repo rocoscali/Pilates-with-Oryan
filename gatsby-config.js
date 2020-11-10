@@ -7,6 +7,7 @@ const {
 const isNetlifyProduction = NETLIFY_ENV === "production"
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
+import "./static/favicon"
 module.exports = {
   siteMetadata: {
     title: `Pilates With Oryan`,
@@ -16,7 +17,7 @@ module.exports = {
     Pilates guides you on how to think and move differently, 
     be more focused, and be more coordinated with your body and mind.`,
     siteUrl: `https://www.pilateswithoryan.com`,
-    image: "./static/favicon.ico",
+    image: "oryan-website.jpg",
     author: "Roi Cohen",
     url: `https://www.pilateswithoryan.com`,
     twitterUsername: `@pilateswithoryan`,
