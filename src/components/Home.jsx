@@ -7,7 +7,6 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
-// import "./homeStyles.css"
 
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;

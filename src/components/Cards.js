@@ -1,7 +1,7 @@
 import React from "react"
 import ClassCard from "./ClassCard.js"
 import CardDeck from "react-bootstrap/CardDeck"
-// import Row from "react-bootstrap/Row"
+
 import Col from "react-bootstrap/Col"
 
 const Cards = props => {
