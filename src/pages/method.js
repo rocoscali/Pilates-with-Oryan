@@ -34,7 +34,7 @@ const method = ({ data }) => {
               a young boy, he was small and sickly and suffered from asthma,
               rickets and rheumatic fever. His father was a successful gymnast,
               and his mother was a naturopath. A family physician gave him an
-              anatomy book. Joseph stated:
+              anatomy book. Joseph stated:{" "}
               <em>
                 “I learned every page, every part of the body. I moved each part
                 as I memorized it. As a child, I was laying in the woods for

@@ -33,20 +33,30 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-preload-fonts`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Josefin Sans`,
-            variants: [`300`, `400`, `500`, `600`],
-          },
-          {
-            family: `Montserrat`,
-            variants: [`100`, `200`, `300`, `400`, `500`, `600`],
-          },
+          `Josefin Sans\:300,400,500,500i,600,700,700i`,
+          `Montserrat\:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i`,
         ],
+        display: "swap",
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Josefin Sans`,
+    //         variants: [`300`, `400`, `500`, `600`],
+    //       },
+    //       {
+    //         family: `Montserrat`,
+    //         variants: [`100`, `200`, `300`, `400`, `500`, `600`],
+    //       },
+    //     ],
+    //   },
+    // },
 
     {
       resolve: `gatsby-source-filesystem`,
