@@ -31,7 +31,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -42,22 +41,12 @@ module.exports = {
         display: "swap",
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Josefin Sans`,
-    //         variants: [`300`, `400`, `500`, `600`],
-    //       },
-    //       {
-    //         family: `Montserrat`,
-    //         variants: [`100`, `200`, `300`, `400`, `500`, `600`],
-    //       },
-    //     ],
-    //   },
-    // },
-
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.pilateswithoryan.com`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
