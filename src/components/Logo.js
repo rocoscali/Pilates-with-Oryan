@@ -6,7 +6,8 @@ import styled from "styled-components"
 const StyledLogo = styled(Img)`
   width: 60px;
   margin-right: 5px;
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
+    width: 50px;
     margin-right: 0;
   }
 `
