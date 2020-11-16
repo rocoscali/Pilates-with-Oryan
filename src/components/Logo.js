@@ -4,16 +4,20 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 const StyledLogo = styled(Img)`
-  width: 40px;
+  width: 60px;
+  margin-right: 5px;
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
 `
 
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.png" }) {
+      logo: file(relativePath: { eq: "logonew.png" }) {
         name
         childImageSharp {
-          fluid(maxWidth: 100, quality: 100) {
+          fluid(maxWidth: 200, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
