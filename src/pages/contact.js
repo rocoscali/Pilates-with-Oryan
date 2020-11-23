@@ -198,7 +198,7 @@ export const query = graphql`
     profilePhoto: file(relativePath: { eq: "oryan-profile-photo.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
+        fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

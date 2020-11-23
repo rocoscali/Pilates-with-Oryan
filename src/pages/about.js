@@ -58,7 +58,7 @@ const About = ({ data }) => {
     <Layout>
       <SEO
         title="About"
-        description=" I work in several studios in Berlin, training classic and contemporary pilates on apparatus classes and mat groups. 
+        description="I work in several studios in Berlin, training classic and contemporary pilates on apparatus classes and mat groups. 
         The lessons are suitable for all levels and conditions, focusing on the participant's personal needs.
 Every-body is individual, and as a trainer, my goal is to see and feel the right alignment for each one that comes to the studio."
       />
@@ -170,7 +170,7 @@ export const query = graphql`
     reformerLegsUp: file(relativePath: { eq: "reformer-legs-up.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 900, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -178,7 +178,7 @@ export const query = graphql`
     cadillacLegsHang: file(relativePath: { eq: "cadillac-legs-hang.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 640, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -186,16 +186,7 @@ export const query = graphql`
     backTeaserCadillac: file(relativePath: { eq: "back-teaser-cadillac.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-
-    wallClass: file(relativePath: { eq: "wall-class-stretch.jpg" }) {
-      name
-      childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 640, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

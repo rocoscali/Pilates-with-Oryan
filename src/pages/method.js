@@ -20,6 +20,14 @@ const Image = styled(Img)`
     width: 95%;
   }
 `
+const Overflow = styled.div`
+  width: 25rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
+`
 
 const method = ({ data }) => {
   return (
@@ -41,6 +49,7 @@ const method = ({ data }) => {
                 hours, hiding and watching the animals move, how the mothers
                 taught the young.”
               </em>{" "}
+              <br />
               <br /> Joseph studied both Eastern and Western forms of exercise,
               including yoga, Zen, and ancient Greek and Roman regimens. He had
               worked so hard to developed his body to the point that at age 14,
@@ -170,11 +179,13 @@ const method = ({ data }) => {
             </p>
           </Col>
           <Col className="justify-content-center d-flex" xs={12} md={12} lg={4}>
-            <StyledImg
-              fluid={data.josephReformer.childImageSharp.fluid}
-              alt={data.josephBalance.name}
-              className="rounded"
-            />
+            <Overflow>
+              <StyledImg
+                fluid={data.josephReformer.childImageSharp.fluid}
+                alt={data.josephBalance.name}
+                className="rounded"
+              />
+            </Overflow>
           </Col>
         </Row>{" "}
         <div className="pt-3">
@@ -209,7 +220,7 @@ export const query = graphql`
     joseph52: file(relativePath: { eq: "joseph-at-52.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 680, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -217,7 +228,7 @@ export const query = graphql`
     josephBalance: file(relativePath: { eq: "joseph-balance.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 680, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -225,7 +236,7 @@ export const query = graphql`
     josephBackBend: file(relativePath: { eq: "joseph-back-bend.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 680, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -233,7 +244,7 @@ export const query = graphql`
     josephReformer: file(relativePath: { eq: "joseph-reformer.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 680, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
@@ -241,7 +252,7 @@ export const query = graphql`
     josephClara: file(relativePath: { eq: "joseph_and_clara.jpg" }) {
       name
       childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
+        fluid(maxWidth: 680, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

@@ -7,7 +7,12 @@ import SEO from "../components/Seo"
 const Videos = props => {
   return (
     <Layout>
-      <SEO title="Videos" />
+      <SEO
+        title="Videos"
+        description="Especially for Covid19 days, I recorded video classes for you to
+          practice at home. The videos are free and available at any time
+          you need it. Practice Pilates at home at stay fit."
+      />
       <Container>
         <div className="text-center pb-2 pt-4">
           <h2>Try One Of My Videos</h2>

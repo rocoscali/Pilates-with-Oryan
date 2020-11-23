@@ -9,9 +9,16 @@ const StyledCard = styled(Card)`
   background: #fcf7ed;
   background-image: url(${texture1});
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15) !important;
+  height: 825px;
+
+  @media (max-width: 1199px) {
+    height: 840px;
+  }
   @media (max-width: 991px) {
     margin: 0rem 0rem 1rem !important;
+    height: auto;
   }
+
   &:hover {
     background: #fcf7ed;
     background-image: url(${texture1});
@@ -36,7 +43,7 @@ const StyledImage = styled(Img)`
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 `
 
-const ClassCard = props => {
+const ClassCardBottom = props => {
   return (
     <StyledCard>
       <Card.Body>
@@ -51,4 +58,4 @@ const ClassCard = props => {
   )
 }
 
-export default ClassCard
+export default ClassCardBottom
