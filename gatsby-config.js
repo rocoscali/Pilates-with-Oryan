@@ -33,6 +33,21 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-preload-fonts`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Josefin Sans`,
+            variants: [`400`],
+          },
+          {
+            family: `Montserrat`,
+            variants: [`400`, `400i`],
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Josefin Sans\:400`, `Montserrat\:400,400i`],
