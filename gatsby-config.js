@@ -51,7 +51,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Josefin Sans\:400`, `Montserrat\:400,400i`],
-        display: "swap",
       },
     },
     {
