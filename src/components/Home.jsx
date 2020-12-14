@@ -26,6 +26,7 @@ const Image = styled(Img)`
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
 `
 const StyledImg = styled(Img)`
+  background-color: #c3bea2;
   display: flex;
   align-items: center;
   width: 70%;

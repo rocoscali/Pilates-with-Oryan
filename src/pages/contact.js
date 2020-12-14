@@ -38,6 +38,7 @@ const StyledIconSmall = styled(Image)`
   margin: 0.5rem;
 `
 const StyledImage = styled(Img)`
+  background-color: #b5aa70;
   display: flex;
   align-items: center;
   border-radius: 50%;

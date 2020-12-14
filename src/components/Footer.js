@@ -20,7 +20,7 @@ const StyledFooter = styled(Navbar)`
 `
 const H5 = styled.h5`
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 1.2rem;
   color: #fcf8f3;
 `

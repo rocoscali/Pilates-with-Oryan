@@ -8,6 +8,8 @@ const Jumbo = styled(BackgroundImage)`
   display: flex;
   align-items: center;
   text-align: center;
+  background-color: #dcf8e1;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

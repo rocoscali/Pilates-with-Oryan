@@ -37,6 +37,7 @@ const StyledColWide = styled(Col)`
   }
 `
 const StyledImageWide = styled(Img)`
+  background-color: #989272;
   display: flex;
   width: 100%;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
@@ -45,6 +46,7 @@ const StyledImageWide = styled(Img)`
   }
 `
 const StyledImg = styled(Img)`
+  background-color: #989272;
   display: flex;
   width: 20rem;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
