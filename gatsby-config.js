@@ -33,6 +33,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-preload-fonts`,
 
+    },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
