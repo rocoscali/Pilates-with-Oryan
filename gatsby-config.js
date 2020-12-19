@@ -33,6 +33,11 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-preload-fonts`,
 
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Josefin Sans\:400`, `Montserrat\:400,400i`],
+      },
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
