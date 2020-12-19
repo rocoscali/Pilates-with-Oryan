@@ -36,7 +36,6 @@ const StyledCard = styled(Card)`
   }
 `
 const StyledImage = styled(Img)`
-  background-color: #bbae9e;
   width: 90%;
   border-radius: 0.25rem;
   margin: 2rem auto;
@@ -51,6 +50,7 @@ const ClassCardTop = props => {
         <Card.Text>{props.text}</Card.Text>
       </Card.Body>
       <StyledImage
+        fadeIn
         alt={props.img.name}
         fluid={props.img.childImageSharp.fluid}
       />

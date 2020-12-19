@@ -62,6 +62,7 @@ const method = ({ data }) => {
           </Col>
           <Col className="justify-content-center d-flex" xs={12} md={12} lg={4}>
             <StyledImg
+              fadeIn
               fluid={data.joseph52.childImageSharp.fluid}
               alt={data.joseph52.name}
               className="rounded"
@@ -112,6 +113,7 @@ const method = ({ data }) => {
           </Col>
           <Col className="justify-content-center d-flex" xs={12} md={12} lg={4}>
             <StyledImg
+              fadeIn
               fluid={data.josephBalance.childImageSharp.fluid}
               alt={data.josephBalance.name}
               className="rounded"
@@ -140,6 +142,7 @@ const method = ({ data }) => {
         </div>
         <Row className="mt-4 mb-4 justify-content-center d-flex">
           <Image
+            fadeIn
             fluid={data.josephBackBend.childImageSharp.fluid}
             alt={data.josephBalance.name}
             className="rounded"
@@ -181,6 +184,7 @@ const method = ({ data }) => {
           <Col className="justify-content-center d-flex" xs={12} md={12} lg={4}>
             <Overflow>
               <StyledImg
+                fadeIn
                 fluid={data.josephReformer.childImageSharp.fluid}
                 alt={data.josephBalance.name}
                 className="rounded"
@@ -203,6 +207,7 @@ const method = ({ data }) => {
         </div>
         <Row className="mt-4 mb-4 justify-content-center d-flex">
           <Image
+            fadeIn
             fluid={data.josephClara.childImageSharp.fluid}
             alt={data.josephBalance.name}
             className="rounded mb-4"
@@ -221,7 +226,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 680, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -229,7 +234,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 680, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -237,7 +242,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 680, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -245,7 +250,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 680, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -253,7 +258,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 680, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

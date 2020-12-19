@@ -144,6 +144,7 @@ const Contact = ({ data }) => {
             <Row>
               <Col className="d-flex justify-content-center">
                 <StyledImage
+                  fadeIn
                   fluid={data.profilePhoto.childImageSharp.fluid}
                   alt={data.profilePhoto.name}
                 />
@@ -200,7 +201,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 600, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

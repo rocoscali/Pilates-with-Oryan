@@ -37,7 +37,6 @@ const StyledColWide = styled(Col)`
   }
 `
 const StyledImageWide = styled(Img)`
-  background-color: #989272;
   display: flex;
   width: 100%;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
@@ -46,7 +45,6 @@ const StyledImageWide = styled(Img)`
   }
 `
 const StyledImg = styled(Img)`
-  background-color: #989272;
   display: flex;
   width: 20rem;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
@@ -89,6 +87,7 @@ Every-body is individual, and as a trainer, my goal is to see and feel the right
           </StyledCol>
           <StyledCol xs={12} md={12} lg={4} className="p-3">
             <StyledImg
+              fadeIn
               fluid={data.backTeaserCadillac.childImageSharp.fluid}
               alt={data.backTeaserCadillac.name}
               className="rounded"
@@ -103,6 +102,7 @@ Every-body is individual, and as a trainer, my goal is to see and feel the right
             lg={{ order: "first", span: 4, offset: 1 }}
           >
             <StyledImg
+              fadeIn
               fluid={data.cadillacLegsHang.childImageSharp.fluid}
               alt={data.cadillacLegsHang.name}
               className="rounded"
@@ -154,6 +154,7 @@ Every-body is individual, and as a trainer, my goal is to see and feel the right
         <Row className="p-3">
           <StyledColWide xs={12} md={12} lg={{ span: 10, offset: 1 }}>
             <StyledImageWide
+              fadeIn
               fluid={data.reformerLegsUp.childImageSharp.fluid}
               alt={data.reformerLegsUp.name}
               className="rounded mb-3"
@@ -173,7 +174,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 900, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -181,7 +182,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 640, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -189,7 +190,7 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 640, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

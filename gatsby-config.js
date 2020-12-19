@@ -31,12 +31,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-preload-fonts`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [`Josefin Sans\:400`, `Montserrat\:400,400i`],
-        display: "swap",
+        fonts: {
+          google: [
+            {
+              family: "Josefin Sans",
+              variants: ["400", "400i"],
+            },
+            {
+              family: "Montserrat",
+              variants: ["400", "400i"],
+            },
+          ],
+        },
       },
     },
     {

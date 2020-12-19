@@ -26,7 +26,6 @@ const Image = styled(Img)`
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
 `
 const StyledImg = styled(Img)`
-  background-color: #c3bea2;
   display: flex;
   align-items: center;
   width: 70%;
@@ -84,6 +83,7 @@ const Home = props => {
       </Container>
       <BackgroundImage
         className="bg"
+        fadeIn
         fluid={props.data.reformerLegsLift.childImageSharp.fluid}
         alt={props.data.reformerLegsLift.name}
       >
@@ -104,6 +104,7 @@ const Home = props => {
       </Container>
       <Container className="mt-4 mb-2 d-flex justify-content-center">
         <Image
+          fadeIn
           fluid={props.data.josephSidePlank.childImageSharp.fluid}
           alt={props.data.josephSidePlank.name}
           className="rounded"
@@ -126,6 +127,7 @@ const Home = props => {
       </Container>
       <BackgroundImage
         className="bg"
+        fadeIn
         fluid={props.data.oryanTeaser.childImageSharp.fluid}
         alt={props.data.oryanTeaser.name}
       >
@@ -160,6 +162,7 @@ const Home = props => {
           {" "}
           <StyledImgCol xs={12} md={12} lg={{ span: 5, offset: 0 }}>
             <StyledImg
+              fadeIn
               fluid={props.data.monkeyHang.childImageSharp.fluid}
               alt={props.data.monkeyHang.name}
               className="center rounded"

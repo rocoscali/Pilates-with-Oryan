@@ -38,7 +38,7 @@ const Jumbotron = () => {
         name
         childImageSharp {
           fluid(maxWidth: 1920, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -48,7 +48,7 @@ const Jumbotron = () => {
         name
         childImageSharp {
           fluid(maxWidth: 990, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -63,7 +63,7 @@ const Jumbotron = () => {
     },
   ]
   return (
-    <Jumbo fluid={sources} alt={data.jumboImage.name}>
+    <Jumbo fluid={sources} fadeIn alt={data.jumboImage.name}>
       <Overlay />
       <Quotes />
     </Jumbo>
