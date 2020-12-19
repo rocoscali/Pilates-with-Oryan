@@ -31,7 +31,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Josefin Sans`,
+            variants: [`400`, `400i`],
+          },
+          {
+            family: `Montserrat`,
+            variants: [`400`, `400i`],
+          },
+        ],
+      },
+    },
 
     {
       resolve: `gatsby-plugin-canonical-urls`,
