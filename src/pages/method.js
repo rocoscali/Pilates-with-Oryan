@@ -29,12 +29,23 @@ const Overflow = styled.div`
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
 `
 
+const H1 = styled.h1`
+  font-size: 2rem;
+`
+
 const method = ({ data }) => {
   return (
     <Layout>
-      <SEO title="The Method" />
+      <SEO
+        title="The Method of Pilates"
+        description="The founder of pilates is Joseph Pilates. He was a health guru, he believed that
+              fitness also supports reaching your life's goals. Joseph
+              registered many patents with the US Patent and Trademark Office
+              including a catapult, the V-Bed, cadillac, the Wunda
+              Chair and several Reformers."
+      />
       <Container>
-        <h2 className="text-center mt-4">The Method By Joseph H. Pilates</h2>
+        <H1 className="text-center mt-4">The Method By Joseph H. Pilates</H1>
         <Row className="mt-4 mb-4">
           <Col xs={12} md={12} lg={8}>
             <p className="text-justify">

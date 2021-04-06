@@ -17,6 +17,7 @@ import SEO from "../components/Seo"
 
 const ContactForm = styled(Form)`
   font-family: "Montserrat", sans-serif;
+  padding-top: 1rem;
 
   .form-control {
     border-radius: 2rem;
@@ -45,13 +46,26 @@ const StyledImage = styled(Img)`
   width: 70%;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
 `
+const H1 = styled.h1`
+  font-size: 2rem;
+`
 
 const Contact = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO
+        title="Contact"
+        description="Contact me for more information about pilates in Berlin, pilates reformer classes, cadillac or mat pilates."
+      />
       <Container className="p-4">
-        <h2 className="text-center">Let's be in touch!</h2>
+        <H1 className="text-center">Let's be in touch!</H1>
+        <h5 className="text-center">
+          Book a Pilates class with me on the Reformer, Cadillac or Mat.
+        </h5>
+        <h5 className="text-center">
+          At your home or in the studios in Berlin Charlottenburg/Prenzlauer
+          Berg.
+        </h5>
         <Row>
           <Col className="col-md-8 col-12">
             <ContactForm
@@ -153,7 +167,7 @@ const Contact = ({ data }) => {
             <Row>
               <Col className="text-center pt-4">
                 <h5>
-                  For more information please use this form or contact me on -
+                  For any question or consulting, please contact me at anytime
                 </h5>
                 <br />
                 <h3> Oryan Werthaim</h3>

@@ -52,18 +52,21 @@ const StyledImg = styled(Img)`
     width: 100%;
   }
 `
+const H1 = styled.h1`
+  font-size: 2rem;
+`
 
 const About = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="About"
-        description="I work in several studios in Berlin, training classic and contemporary pilates on apparatus classes and mat groups. 
+        title="About Pilates with Oryan Berlin"
+        description="I work as a pilates instructor in several studios in Berlin, training classic and contemporary pilates on reformer, cadillac and mat groups. 
         The lessons are suitable for all levels and conditions, focusing on the participant's personal needs.
-Every-body is individual, and as a trainer, my goal is to see and feel the right alignment for each one that comes to the studio."
+Every-body is individual, and as a pilates trainer, my goal is to see and feel the right alignment for each one that comes to the studio."
       />
       <div>
-        <h2 className="text-center pt-4 pb-2">About Me</h2>
+        <H1 className="text-center pt-4 pb-2">About Me</H1>
       </div>
       <StyledContainer className="rounded">
         <Row className=" mb-3 pt-3 text-left">

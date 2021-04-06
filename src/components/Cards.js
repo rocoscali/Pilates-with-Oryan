@@ -13,7 +13,7 @@ const Cards = props => {
           <ClassCardTop
             img={props.data.personalTrainingClass}
             title="Personal Training"
-            text="In a one on one session, you will get the opportunity to work on your individual needs, 
+            text="In a one on one pilates session, you will get the opportunity to work on your individual needs, 
             using the Apparatus to help you achieve your goals. We will be working on the Reformer, Cadillac, 
             chairs, Pedi-pole, and more. Private classes are recommended if you are new to Pilates or suffer 
             from an injury or have a medical condition requiring special needs. 
@@ -26,7 +26,7 @@ const Cards = props => {
             img={props.data.reformerClass}
             title="Reformer Class"
             text="The reformer is designed to use spring-resistance methodology to maximize core strength and 
-            improve muscular imbalances. Many exercises on the reformer incorporate mat pilates repertoire and 
+            improve muscular imbalances. Many pilates exercises on the reformer incorporate mat pilates repertoire and 
             involve pulling, pressing, or holding a mobile carriage steady, while resisting tension from the anchored 
             steel springs. The reformer is an incredibly versatile apparatus and has the unique ability to adjust spring 
             tension for each exercise and level of power. Hence it's great for rehabilitation purposes too. 
@@ -40,7 +40,7 @@ const Cards = props => {
             img={props.data.wallUnit}
             title="Tower & Mat Class"
             text="The 'wall unit' or also called 'tower' is a compressed version of the so-called 'Cadillac.' 
-            Tower classes are an amazing way to practice the mat and to work with the springs. 
+            Pilate Tower classes are an amazing way to practice the mat and to work with the springs. 
             They enable exercises that would not be possible without support but also provides the opportunity to try new challenges. 
             In this class, we will also work on functional and standing movements. It will fill you with postural awareness, feeling taller and lighter! 
             Whether you are a beginner or advanced level, you will find the lesson tailored to your abilities. 
@@ -55,8 +55,8 @@ const Cards = props => {
             text="During pregnancy, there are changes in the woman's body that require attention. 
             In most cases, the ligaments and muscles in the abdomen lengthen and therefore weaken, and the spine's natural arches increase. 
             Also, the pelvis muscles - the pelvic floor, thigh, buttocks, and lower abdomen are weakening. 
-            In prenatal classes, we will emphasize identifying pelvic floor muscles, breathing, strengthening the lower abdomen, buttocks, and inner thighs. 
-            In postnatal classes, we start to heal and build strong foundations in your 'new' post-baby body, 
+            In pilates prenatal classes, we will emphasize identifying pelvic floor muscles, breathing, strengthening the lower abdomen, buttocks, and inner thighs. 
+            In pilates postnatal classes, we start to heal and build strong foundations in your 'new' post-baby body, 
             which will prevent issues like lower back pain and shoulder and neck tension."
           />
         </Col>

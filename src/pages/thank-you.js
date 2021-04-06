@@ -18,11 +18,15 @@ const StyledIconSmall = styled(Image)`
   margin: 0.5rem;
 `
 
+const H1 = styled.h1`
+  font-size: 2rem;
+`
+
 const Thankyou = ({ data }) => {
   return (
     <Layout>
       <Container className="mt-3 text-center justify-content-center">
-        <h2>Thank you for getting in touch!</h2>
+        <H1>Thank you for getting in touch!</H1>
 
         <h5 className="m-3">
           Your message has been successfully sent. <br />

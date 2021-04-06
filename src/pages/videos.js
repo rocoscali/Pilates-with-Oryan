@@ -2,20 +2,25 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Layout from "../components/Layout"
 import VideoComp from "../components/VideoComp"
+import styled from "styled-components"
 import SEO from "../components/Seo"
+
+const H1 = styled.h1`
+  font-size: 2rem;
+`
 
 const Videos = props => {
   return (
     <Layout>
       <SEO
-        title="Videos"
-        description="Especially for Covid19 days, I recorded video classes for you to
+        title="Pilates Videos"
+        description="Especially for Covid19 days, I recorded pilates video classes for you to
           practice at home. The videos are free and available at any time
-          you need it. Practice Pilates at home at stay fit."
+          you need it. Practice Pilates at home and stay fit."
       />
       <Container>
         <div className="text-center pb-2 pt-4">
-          <h2>Try One Of My Videos</h2>
+          <H1>Try One Of My Videos</H1>
         </div>
         <div className="row">
           <div className="col-md-6 p-2">

@@ -8,6 +8,9 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
 
+const H1 = styled.h1`
+  font-size: 2rem;
+`
 const H4 = styled.h4`
   font-family: "Josefin Sans", sans-serif;
 `
@@ -66,7 +69,7 @@ const Home = props => {
   return (
     <div>
       <Container>
-        <h2 className="text-center mt-4">Pilates classes in Berlin</h2>
+        <H1 className="text-center mt-4">Pilates classes in Berlin</H1>
         <H4 className="text-center mb-4">
           Classical | Contemporary | Mat & Apparatus
         </H4>
@@ -120,9 +123,10 @@ const Home = props => {
           <br /> - Joseph Pilates
         </H5>
         <p className="text-center">
-          To get the best results, I recommend at least 2-3 sessions a week of
-          practice, apparatus class, or a mat class with small equipment
-          (elastic band, fitness ball, magic ring, etc.).
+          To get the best results, I recommend at least 2-3 pilates sessions a
+          week of practice, apparatus class (reformer, cadillac, tower, etc.),
+          or a mat class with small equipment (elastic band, fitness ball, magic
+          ring, etc.).
         </p>
       </Container>
       <BackgroundImage
@@ -138,9 +142,9 @@ const Home = props => {
         {/* <HR className="mt-4 mb-4"></HR> */}
         <br />
         <p className="text-center">
-          Especially for Covid19 days, I recorded video classes for you to
-          practice at home. <br /> The videos are free and available at any time
-          you need it.{" "}
+          Especially for Covid19 days, I recorded pilates video classes for you
+          to practice pilates at home. <br /> The videos are free and available
+          at any time you need it.{" "}
         </p>{" "}
         <br />
         <Button className=" btn-lg w-35" variant="info" type="submit">
@@ -185,6 +189,9 @@ const Home = props => {
               Are you ready for a journey of discovering the art of control?{" "}
               <br />I am waiting to guide you through it!
             </p>
+            <Button className=" btn-lg w-35" variant="info" type="submit">
+              <StyledLink to="/contact">Book a lesson</StyledLink>
+            </Button>
           </StyledTextCol>
         </Row>
       </Container>
