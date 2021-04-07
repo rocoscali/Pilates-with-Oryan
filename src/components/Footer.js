@@ -1,13 +1,11 @@
 import React from "react"
-import Navbar from "react-bootstrap/Navbar"
+
 import styled from "styled-components"
 import texture from "../assets/designs/redox-01.png"
-import EmailIcon from "../assets/designs/email-icon-dark.png"
-import FacebookIcon from "../assets/designs/facebook-icon.png"
-import InstagramIcon from "../assets/designs/instagram-icon.png"
+import EmailIcon from "../assets/designs/envelope-svg.svg"
+import FacebookBW from "../assets/designs/facebook-svg.svg"
+import InstagramIcon from "../assets/designs/instagram-svg.svg"
 import Image from "react-bootstrap/Image"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 // import Logo from "./Logo"
 
 const StyledFooter = styled.div`
@@ -32,6 +30,7 @@ const H5 = styled.h5`
   color: #fcf8f3;
 `
 const StyledIcon = styled(Image)`
+  /* fill: #fcf8f3; */
   width: 2rem;
   margin: 0.25rem 1rem 0.25rem;
 `
@@ -47,7 +46,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <StyledIcon src={FacebookIcon} alt="contact icon" />
+              <StyledIcon src={FacebookBW} alt="contact icon" />
             </a>
             <a
               href="https://www.instagram.com/oryan_pilates_berlin"
