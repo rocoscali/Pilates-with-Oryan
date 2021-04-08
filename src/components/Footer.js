@@ -64,32 +64,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <div className="container align-items-center">
-        <Row>
-          <Col className=" text-center">
-            <a
-              href="https://www.facebook.com/PilatesOryan"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <StyledIcon src={FacebookIcon} alt="contact icon" />
-            </a>
-            <a
-              href="https://www.instagram.com/oryan_pilates_berlin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <StyledIcon src={InstagramIcon} alt="contact icon" />
-            </a>
-            <a href="mailto:oryanpilates@gmail.com">
-              <StyledIcon src={EmailIcon} alt="contact email icon" />
-            </a>
-          </Col>
-          <Col className="text-center">
-            <H5 className="m-2">PILATES WITH ORYAN © </H5>
-          </Col>
-        </Row>
-      </div> */}
     </StyledFooter>
   )
 }

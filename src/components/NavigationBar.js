@@ -94,12 +94,7 @@ const NavigationBar = () => {
             <Nav className="navbar-nav ml-auto">
               <Nav.Item>
                 <Link className="nav-link" to="/about">
-                  About Me
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link className="nav-link" to="/method">
-                  The Method
+                  About
                 </Link>
               </Nav.Item>
               <Nav.Item>

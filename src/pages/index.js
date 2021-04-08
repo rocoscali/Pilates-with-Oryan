@@ -25,14 +25,6 @@ export const query = graphql`
         }
       }
     }
-    josephSidePlank: file(relativePath: { eq: "joseph-side-plank.jpg" }) {
-      name
-      childImageSharp {
-        fluid(maxWidth: 1080, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
     reformerLegsLift: file(relativePath: { eq: "reformer-legs-lift.jpg" }) {
       name
       childImageSharp {
@@ -45,6 +37,22 @@ export const query = graphql`
       name
       childImageSharp {
         fluid(maxWidth: 1920, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cadillacLegsHang: file(relativePath: { eq: "cadillac-legs-hang.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 640, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    backTeaserCadillac: file(relativePath: { eq: "back-teaser-cadillac.jpg" }) {
+      name
+      childImageSharp {
+        fluid(maxWidth: 640, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

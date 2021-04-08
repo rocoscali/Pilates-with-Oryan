@@ -11,10 +11,11 @@ import BackgroundImage from "gatsby-background-image"
 const H1 = styled.h1`
   font-size: 2rem;
 `
-const H4 = styled.h4`
+const H2 = styled.h2`
+  font-size: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
 `
-const H5 = styled.h5`
+const H4 = styled.h4`
   font-size: 1.2rem;
 `
 const HR = styled.hr`
@@ -31,7 +32,7 @@ const Image = styled(Img)`
 const StyledImg = styled(Img)`
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 20rem;
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
   z-index: 5;
   @media (max-width: 991px) {
@@ -42,6 +43,7 @@ const StyledImgCol = styled(Col)`
   justify-content: center;
 `
 const StyledTextCol = styled(Col)`
+  text-align: left;
   @media (max-width: 991px) {
     text-align: center;
   }
@@ -65,23 +67,32 @@ const Overlay = styled.div`
   z-index: -1;
 `
 
+const StyledText = styled.div`
+  display: flex;
+  text-align: left;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+`
 const Home = props => {
   return (
     <div>
       <Container>
         <H1 className="text-center mt-4">Pilates classes in Berlin</H1>
-        <H4 className="text-center mb-4">
+        <H2 className="text-center mb-4">
           Classical | Contemporary | Mat & Apparatus
-        </H4>
+        </H2>
         <HR />
-        <H5 className="text-center mt-4">
-          I believe that if you want something different you have to do
-          something different, otherwise nothing changes.
-        </H5>
+        <H4 className="text-center mt-4">
+          Pilates is suitable for any purpose – fitness, better posture,
+          athlete's performance improvement, injury rehabilitation, and most
+          important to help us feel great.
+        </H4>
         <p className="text-center p-2 ">
-          To change your posture or your fitness level, you have to do something
-          different. Pilates guides you on how to think and move differently, be
-          more focused, and be more coordinated with your body and mind.
+          I believe that Pilates is great for everybody at every age, it helps
+          to improve our posture and our fitness level. <br />
+          Pilates guides us on how to think and move differently, be more
+          focused, and be more coordinated with our body and mind.
         </p>
       </Container>
       <BackgroundImage
@@ -92,42 +103,60 @@ const Home = props => {
       >
         <Overlay />
       </BackgroundImage>
-      <Container className="text-center mt-4 mb-4">
-        <p>
-          While today it is more commonly known as "Pilates", Joseph Pilates
-          actually called his training method "Contrology" ("The Art of
-          Control"). Joseph explains:{" "}
-          <em>
-            “To be able to perform movements smoothly and fluently, you have to
-            concentrate on every single part, every muscle of your body at every
-            moment. This is the only way to gain control over every aspect of
-            every training moment .”
-          </em>
-        </p>
-      </Container>
-      <Container className="mt-4 mb-2 d-flex justify-content-center">
-        <Image
-          fadeIn
-          fluid={props.data.josephSidePlank.childImageSharp.fluid}
-          alt={props.data.josephSidePlank.name}
-          className="rounded"
-        />
+      <Container className="mt-4 mb-4">
+        <H1 className="text-center">About</H1>
+        <Row className="mt-3 mb-3">
+          <StyledTextCol className="align-items-middle" xs={12} md={12} lg={7}>
+            <p>
+              Oryan is an athlete and a dancer from an early age. For her,
+              dancing has always fostered a strong bond between body and mind.
+              <br />
+              During training, she has been exposed to Pilates as a tool for
+              body maintenance, recovery, and improvement. <br />
+              She always had a passion for working with people, so after
+              completing her BA in psychology in 2008, she immediately started
+              her Pilates certification training. <br />
+              <br />
+              Since 2009, Oryan works as A Pilates instructor in many studios in
+              Tel Aviv, Israel. She had the opportunity to work daily with
+              disabled and amputees in soldiers rehabilitation center "Bet
+              Halohem" in Tel Aviv for 3 years. Since 2016 Oryan works in
+              studios around Berlin.
+              <br />
+              <br /> She completed the Anatomy Trains© "in Structure and
+              Function" course By Tom Mayers in 2019.
+              <br /> In 2020, she became a certified Thai massage therapist.
+            </p>
+          </StyledTextCol>
+          <StyledImgCol xs={12} md={12} lg={{ span: 5, offset: 0 }}>
+            <StyledImg
+              fadeIn
+              fluid={props.data.cadillacLegsHang.childImageSharp.fluid}
+              alt={props.data.cadillacLegsHang.name}
+              className="center rounded"
+            />
+          </StyledImgCol>
+        </Row>
       </Container>
       <Container className="p-3">
-        <H5 className="text-center mt-2 mb-3">
+        <StyledText>
+          <p>
+            In my classes, I emphasize accuracy and correct movement, along with
+            humor and a fun atmosphere. My classes are in English, German, and
+            Hebrew.
+            <br /> To get the best results, I recommend at least 2-3 pilates
+            sessions a week, apparatus class (reformer, cadillac, tower, etc.)
+            or a mat class with small equipment (elastic band, fitness ball,
+            magic ring, etc.).
+          </p>
+        </StyledText>
+        <H4 className="font-weight-bold text-center mt-2 mb-3">
           <em>
-            {" "}
             "In 10 sessions you'll feel the difference, in 20 you'll see the
-            difference, and in 30 you'll have a new body"{" "}
+            difference, and in 30 you'll have a new body"
           </em>
           <br /> - Joseph Pilates
-        </H5>
-        <p className="text-center">
-          To get the best results, I recommend at least 2-3 pilates sessions a
-          week of practice, apparatus class (reformer, cadillac, tower, etc.),
-          or a mat class with small equipment (elastic band, fitness ball, magic
-          ring, etc.).
-        </p>
+        </H4>
       </Container>
       <BackgroundImage
         className="bg"
@@ -137,63 +166,26 @@ const Home = props => {
       >
         <Overlay />
       </BackgroundImage>
-      <Container className="text-center">
-        <br />
-        {/* <HR className="mt-4 mb-4"></HR> */}
-        <br />
+      <Container className="pt-5 text-center">
         <p className="text-center">
           Especially for Covid19 days, I recorded pilates video classes for you
           to practice pilates at home. <br /> The videos are free and available
-          at any time you need it.{" "}
-        </p>{" "}
-        <br />
-        <Button className=" btn-lg w-35" variant="info" type="submit">
+          at any time you need it.
+        </p>
+
+        <Button className="m-3 btn-lg w-35" variant="info" type="submit">
           <StyledLink to="/videos">To The Videos</StyledLink>
         </Button>
-        <br />
-        {/* <HR className="mt-4 mb-4"></HR> */}
-        <br />
-        <H5 className="text-center mt-3 mb-3">
-          As you lay down on the mat, clear your mind, and concentrate on the
-          movements
-        </H5>
-        <p className="text-center">
-          The more you practice, the more you will progress. The more you
-          progress, the stronger you will get. <br />
-          Then you will be able to perform a more complex movement.{" "}
+        <H4 className="text-center mt-3 mb-3">
+          Pilates is magical, and our body and mind can do magic!
+        </H4>
+        <p className="m-3">
+          Are you ready for a journey of discovering the art of control? <br />I
+          am waiting to guide you through it!
         </p>
-        <Row className="mt-5 mb-5">
-          {" "}
-          <StyledImgCol xs={12} md={12} lg={{ span: 5, offset: 0 }}>
-            <StyledImg
-              fadeIn
-              fluid={props.data.monkeyHang.childImageSharp.fluid}
-              alt={props.data.monkeyHang.name}
-              className="center rounded"
-            />
-          </StyledImgCol>
-          <StyledTextCol className="align-items-middle" xs={12} md={12} lg={7}>
-            <H5 className="mt-3">With all being serious, you must have fun!</H5>
-            <br />{" "}
-            <p>
-              My students say the studio is kind of a playground. It's so much
-              fun to hang like a monkey, roll, flip upside down, and so much
-              more.
-            </p>
-            <br />
-            <H5>
-              Pilates is magical and our body and mind can do magic.{" "}
-            </H5>{" "}
-            <br />
-            <p>
-              Are you ready for a journey of discovering the art of control?{" "}
-              <br />I am waiting to guide you through it!
-            </p>
-            <Button className=" btn-lg w-35" variant="info" type="submit">
-              <StyledLink to="/contact">Book a lesson</StyledLink>
-            </Button>
-          </StyledTextCol>
-        </Row>
+        <Button className="m-3 btn-lg w-35" variant="info" type="submit">
+          <StyledLink to="/contact">Book a lesson</StyledLink>
+        </Button>
       </Container>
     </div>
   )
