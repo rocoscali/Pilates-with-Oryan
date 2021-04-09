@@ -49,11 +49,11 @@ const StyledTextCol = styled(Col)`
   }
 `
 const StyledLink = styled(Link)`
-  color: #fcf8f3;
+  /* color: #fcf8f3;
   text-decoration: none;
   &:hover {
     color: #000;
-    text-decoration: none;
+    text-decoration: none; */
   }
 `
 const Overlay = styled.div`
@@ -175,9 +175,12 @@ const Home = props => {
           at any time you need it.
         </p>
 
-        <Button className="m-3 btn-lg w-35" variant="info" type="submit">
-          <StyledLink to="/videos">To The Videos</StyledLink>
-        </Button>
+        <StyledLink to="/videos">
+          <Button className="m-3 btn-lg w-35" variant="info" type="submit">
+            To The Videos{" "}
+          </Button>
+        </StyledLink>
+
         <HR />
         <H4 className=" font-weight-bold text-center mt-4 mb-3">
           I invite to join in one of my classes in Berlin
@@ -186,15 +189,20 @@ const Home = props => {
           Are you ready for a journey of discovering the art of control? <br />I
           am waiting to guide you through it!
         </p>
-        <Button className="m-3 btn-lg w-35" variant="info" type="submit">
-          <StyledLink to="/contact">Book a lesson</StyledLink>
-        </Button>
+
+        <StyledLink to="/contact/#contact">
+          <Button className="m-3 btn-lg w-35" variant="info" type="submit">
+            Book a lesson
+          </Button>
+        </StyledLink>
+
         <H4 className="font-weight-bold fon text-center mt-1">Or</H4>
-        <Button className="m-3 btn-lg w-35" variant="info" type="submit">
-          <StyledLink to="/online-class/#zoom-form">
+
+        <StyledLink to="/online-class/#zoom-form">
+          <Button className="m-3 btn-lg w-35" variant="info" type="submit">
             join my new Online Zoom Classes!
-          </StyledLink>
-        </Button>
+          </Button>
+        </StyledLink>
       </Container>
     </div>
   )

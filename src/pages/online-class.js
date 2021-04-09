@@ -69,8 +69,8 @@ const Contact = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Contact"
-        description="Contact me for more information about pilates in Berlin, pilates reformer classes, cadillac or mat pilates."
+        title="Zoom Classes"
+        description="Join me for a Pilates online classes on Zoom at home"
       />
       <Container id="zoom-form" className="p-4">
         <H1 className="text-center">Book an online Zoom Class!</H1>
@@ -88,7 +88,7 @@ const Contact = ({ data }) => {
               onSubmit="submit"
               action="/thank-you"
             >
-              <input type="hidden" name="form-name" value="contact form" />
+              <input type="hidden" name="form-name" value="zoom form" />
               <p hidden>
                 <label>
                   Don’t fill this out
