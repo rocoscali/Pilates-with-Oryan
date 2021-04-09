@@ -72,19 +72,16 @@ const Contact = ({ data }) => {
         title="Contact"
         description="Contact me for more information about pilates in Berlin, pilates reformer classes, cadillac or mat pilates."
       />
-      <Container id="contact" className="p-4">
-        <H1 className="text-center">Let's be in touch!</H1>
+      <Container id="zoom-form" className="p-4">
+        <H1 className="text-center">Book an online Zoom Class!</H1>
         <h5 className="text-center">
-          Book a Pilates class with me on the Reformer, Cadillac or Mat.
+          Fill in the booking form and choose your preferred time
         </h5>
-        <h5 className="text-center">
-          At your home or in the studios in Berlin Charlottenburg/Prenzlauer
-          Berg.
-        </h5>
+
         <Row>
           <StyledColLeft className="col-lg-6 col-12">
             <ContactForm
-              name="contact form"
+              name="zoom form"
               method="post"
               data-netlify-honeypot="bot-field"
               data-netlify="true"
@@ -120,53 +117,48 @@ const Contact = ({ data }) => {
               <Form.Group controlId="message">
                 <Form.Label>Your Message</Form.Label>
                 <Form.Control
-                  required
                   as="textarea"
                   rows={3}
                   placeholder="Write to me"
                   name="message"
                 />
               </Form.Group>
-
-              <Form.Group controlId="chosenClass">
-                <Form.Label as="legend">
-                  Choose any of your interests:
-                </Form.Label>
+              <Form.Group required controlId="chosenClass">
+                <Form.Label as="legend">Choose any of the classes:</Form.Label>
                 <Form.Check
-                  name="classTypeZoom"
+                  name="class1"
                   type="checkbox"
-                  label="Zoom Pilates Class   *NEW*"
-                  id="chosenClass6"
-                />
-                <Form.Check
-                  name="classTypePrivate"
-                  type="checkbox"
-                  label="Private Pilates"
+                  label="12th April - 09:00"
                   id="chosenClass1"
                 />
                 <Form.Check
-                  name="classTypeDuo"
+                  name="class2"
                   type="checkbox"
-                  label="Duo Pilates"
+                  label="15th April - 19:00"
                   id="chosenClass2"
                 />
                 <Form.Check
-                  name="classTypeGroup"
+                  name="class3"
                   type="checkbox"
-                  label="Group Pilates"
+                  label="19th April - 09:00"
                   id="chosenClass3"
                 />
                 <Form.Check
-                  name="classTypeHome"
+                  name="class4"
                   type="checkbox"
-                  label="Pilates At Home"
+                  label="22th April - 19:00"
                   id="chosenClass4"
                 />
-
                 <Form.Check
-                  name="classTypeMassage"
+                  name="class5"
                   type="checkbox"
-                  label="Fascia Massage Therapy"
+                  label="26th April - 09:00"
+                  id="chosenClass5"
+                />
+                <Form.Check
+                  name="class5"
+                  type="checkbox"
+                  label="29th April - 19:00"
                   id="chosenClass5"
                 />
               </Form.Group>
@@ -176,7 +168,7 @@ const Contact = ({ data }) => {
                   variant="info"
                   type="submit"
                 >
-                  Send
+                  Save my spot
                 </Button>
               </div>
             </ContactForm>

@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import Logo from "./Logo"
 import styled from "styled-components"
 import texture from "../assets/designs/redox-01.png"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const StyledNavbar = styled.div`
   .navbar {
@@ -93,12 +94,12 @@ const NavigationBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="navbar-nav ml-auto">
               <Nav.Item>
-                <Link className="nav-link" to="/about">
+                <AnchorLink className="nav-link" to="/#about">
                   About
-                </Link>
+                </AnchorLink>
               </Nav.Item>
               <Nav.Item>
-                <Link className=" nav-link" to="/classes">
+                <Link className="nav-link" to="/classes">
                   Classes
                 </Link>
               </Nav.Item>
@@ -108,7 +109,7 @@ const NavigationBar = () => {
                 </Link>
               </Nav.Item>
               <Nav.Item>
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact/#contact">
                   Contact Me
                 </Link>
               </Nav.Item>

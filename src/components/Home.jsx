@@ -103,6 +103,7 @@ const Home = props => {
       >
         <Overlay />
       </BackgroundImage>
+      <div id="about"></div>
       <Container className="mt-4 mb-4">
         <H1 className="text-center">About</H1>
         <Row className="mt-3 mb-3">
@@ -150,7 +151,8 @@ const Home = props => {
             magic ring, etc.).
           </p>
         </StyledText>
-        <H4 className="font-weight-bold text-center mt-2 mb-3">
+        <HR />
+        <H4 className="font-weight-bold text-center pt-3 mt-2 mb-3">
           <em>
             "In 10 sessions you'll feel the difference, in 20 you'll see the
             difference, and in 30 you'll have a new body"
@@ -176,8 +178,9 @@ const Home = props => {
         <Button className="m-3 btn-lg w-35" variant="info" type="submit">
           <StyledLink to="/videos">To The Videos</StyledLink>
         </Button>
-        <H4 className="text-center mt-3 mb-3">
-          Pilates is magical, and our body and mind can do magic!
+        <HR />
+        <H4 className=" font-weight-bold text-center mt-4 mb-3">
+          I invite to join in one of my classes in Berlin
         </H4>
         <p className="m-3">
           Are you ready for a journey of discovering the art of control? <br />I
@@ -185,6 +188,12 @@ const Home = props => {
         </p>
         <Button className="m-3 btn-lg w-35" variant="info" type="submit">
           <StyledLink to="/contact">Book a lesson</StyledLink>
+        </Button>
+        <H4 className="font-weight-bold fon text-center mt-1">Or</H4>
+        <Button className="m-3 btn-lg w-35" variant="info" type="submit">
+          <StyledLink to="/online-class/#zoom-form">
+            join my new Online Zoom Classes!
+          </StyledLink>
         </Button>
       </Container>
     </div>
