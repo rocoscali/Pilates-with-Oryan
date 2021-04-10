@@ -156,10 +156,10 @@ const Contact = ({ data }) => {
                   id="chosenClass5"
                 />
                 <Form.Check
-                  name="class5"
+                  name="class6"
                   type="checkbox"
                   label="29th April - 19:00"
-                  id="chosenClass5"
+                  id="chosenClass6"
                 />
               </Form.Group>
               <div className=" justify-content-center d-flex">
