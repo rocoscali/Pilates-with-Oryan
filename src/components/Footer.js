@@ -32,6 +32,7 @@ const H5 = styled.h5`
 const StyledIcon = styled(Image)`
   /* fill: #fcf8f3; */
   width: 2rem;
+  height: 2rem;
   margin: 0.25rem 1rem 0.25rem;
 `
 
