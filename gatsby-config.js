@@ -18,7 +18,7 @@ module.exports = {
     Pilates guides you on how to think and move differently, 
     be more focused, and be more coordinated with your body and mind.`,
     siteUrl: `https://www.pilateswithoryan.com`,
-    image: "/oryan-website.jpg",
+    image: "/oryan-website512.jpg",
     author: "Roi Cohen",
     url: `https://www.pilateswithoryan.com`,
     twitterUsername: `@pilateswithoryan`,
@@ -40,7 +40,8 @@ module.exports = {
         short_name: `Pilates With Oryan`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/assets/img/oryan-website.jpg`, // This path is relative to the root of the site.
+        icon: `src/assets/img/oryan-website512.jpg`,
+        include_favicon: false, // This path is relative to the root of the site.
       },
     },
     {

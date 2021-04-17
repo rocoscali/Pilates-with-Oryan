@@ -25,10 +25,10 @@ const HR = styled.hr`
   border-radius: 5px;
   width: 50%;
 `
-const Image = styled(Img)`
-  width: 30rem;
-  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
-`
+// const Image = styled(Img)`
+//   width: 30rem;
+//   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.15);
+// `
 const StyledImg = styled(Img)`
   display: flex;
   align-items: center;
