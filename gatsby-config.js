@@ -42,7 +42,7 @@ module.exports = {
         background_color: `#fcf9f4`,
         theme_color: `#8db596`,
         display: `minimal-ui`,
-        icon: `src/assets/img/oryan-website.png`, // This path is relative to the root of the site.
+        icon: `src/assets/img/oryan-website.jpg`, // This path is relative to the root of the site.
         include_favicon: false,
       },
     },
