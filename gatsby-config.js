@@ -34,6 +34,16 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Pilates With Oryan`,
+        short_name: `Pilates With Oryan`,
+        start_url: `/`,
+        display: `minimal-ui`,
+        icon: `src/assets/img/oryan-website.jpg`, // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -60,
