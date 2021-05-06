@@ -70,7 +70,7 @@ const Contact = ({ data }) => {
     <Layout>
       <SEO
         title="Contact"
-        description="Contact me for more information about pilates in Berlin, pilates reformer classes, cadillac or mat pilates."
+        description="Contact me for more information about pilates in Berlin, pilates reformer classes, cadillac, mat pilates or online zoom class."
       />
       <Container id="contact" className="p-4">
         <H1 className="text-center">Let's be in touch!</H1>

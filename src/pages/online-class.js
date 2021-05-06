@@ -70,7 +70,7 @@ const Contact = ({ data }) => {
     <Layout>
       <SEO
         title="Zoom Classes"
-        description="Join me for a Pilates online classes on Zoom at home"
+        description="Join me for a Pilates online classes on Zoom from your home."
       />
       <Container id="zoom-form" className="p-4">
         <H1 className="text-center">Book an online Zoom Class!</H1>

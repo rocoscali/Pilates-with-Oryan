@@ -12,14 +12,13 @@ module.exports = {
     title: `Pilates With Oryan`,
     titleTemplate: `%s · Pilates With Oryan`,
     description: `Oryan Werthaim is a Pilates instructor in Berlin, offers 
-    Classical, Contemporary, Mat & Apparatus classes. 
-    Pilates is suitable for any purpose – fitness, better posture, athlete's performance improvement, 
+    Classical, Contemporary, Mat and Apparatus classes. 
+    Pilates is suitable for many purposes – fitness, better posture, athletes performance improvement, 
     injury rehabilitation, and most important to help us feel great.
     Pilates guides you on how to think and move differently, 
     be more focused, and be more coordinated with your body and mind.`,
     siteUrl: `https://www.pilateswithoryan.com`,
     image: "/oryan-website.jpg",
-    author: "Roi Cohen",
     url: `https://www.pilateswithoryan.com`,
     twitterUsername: `@pilateswithoryan`,
     locale: `en_US`,

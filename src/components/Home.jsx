@@ -84,7 +84,7 @@ const Home = props => {
         </H2>
         <HR />
         <H4 className="text-center mt-4">
-          Pilates is suitable for any purpose – fitness, better posture,
+          Pilates is suitable for many purposes – fitness, better posture,
           athlete's performance improvement, injury rehabilitation, and most
           important to help us feel great.
         </H4>
