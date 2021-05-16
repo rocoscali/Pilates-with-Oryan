@@ -140,7 +140,7 @@ const Contact = ({ data }) => {
                 <Form.Check
                   name="class3"
                   type="checkbox"
-                  label="24rd May - 09:00"
+                  label="24th May - 09:00"
                   id="chosenClass3"
                 />
                 <Form.Check
@@ -152,7 +152,7 @@ const Contact = ({ data }) => {
                 <Form.Check
                   name="class5"
                   type="checkbox"
-                  label="31th May - 09:00"
+                  label="31st May - 09:00"
                   id="chosenClass5"
                 />
                 <Form.Check
@@ -164,13 +164,13 @@ const Contact = ({ data }) => {
                 <Form.Check
                   name="class7"
                   type="checkbox"
-                  label="7rd June - 09:00"
+                  label="7th June - 09:00"
                   id="chosenClass7"
                 />
                 <Form.Check
                   name="class8"
                   type="checkbox"
-                  label="10rd June - 19:00"
+                  label="10th June - 19:00"
                   id="chosenClass8"
                 />
               </Form.Group>
