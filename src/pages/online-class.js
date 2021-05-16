@@ -128,49 +128,49 @@ const Contact = ({ data }) => {
                 <Form.Check
                   name="class1"
                   type="checkbox"
-                  label="26th April - 09:00"
-                  id="chosenClass1"
+                  label="17th May - 09:00"
+                  id="chosenClass7"
                 />
                 <Form.Check
                   name="class2"
                   type="checkbox"
-                  label="29th April - 19:00"
-                  id="chosenClass2"
+                  label="20th May - 19:00"
+                  id="chosenClass8"
                 />
                 <Form.Check
                   name="class3"
                   type="checkbox"
-                  label="3rd May - 09:00"
+                  label="24rd May - 09:00"
                   id="chosenClass3"
                 />
                 <Form.Check
                   name="class4"
                   type="checkbox"
-                  label="6th May - 19:00"
+                  label="27th May - 19:00"
                   id="chosenClass4"
                 />
                 <Form.Check
                   name="class5"
                   type="checkbox"
-                  label="10th May - 09:00"
+                  label="31th May - 09:00"
                   id="chosenClass5"
                 />
                 <Form.Check
                   name="class6"
                   type="checkbox"
-                  label="13th May - 19:00"
+                  label="3rd June - 19:00"
                   id="chosenClass6"
                 />
                 <Form.Check
                   name="class7"
                   type="checkbox"
-                  label="17th May - 09:00"
+                  label="7rd June - 09:00"
                   id="chosenClass7"
                 />
                 <Form.Check
                   name="class8"
                   type="checkbox"
-                  label="20th May - 19:00"
+                  label="10rd June - 19:00"
                   id="chosenClass8"
                 />
               </Form.Group>
